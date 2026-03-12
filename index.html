@@ -803,6 +803,50 @@
     </div>
   </footer>
 
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "MedicalClinic",
+        "@id": "https://drdraganailic.com/#clinic",
+        "name": "Pure Aesthetic",
+        "url": "https://drdraganailic.com",
+        "logo": "https://drdraganailic.com/images/favicon.png",
+        "image": "https://drdraganailic.com/images/hero/dragana-hero.jpg",
+        "description": "Klinika estetske medicine u Loznici. Hijaluronski fileri, Botox, Jalupro, mezoterapija i Glass Skin tretmani.",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Bulevar Dositeja Obradovića 50a",
+          "addressLocality": "Loznica",
+          "addressCountry": "RS"
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+            "opens": "09:00",
+            "closes": "18:00"
+          }
+        ],
+        "sameAs": ["https://www.instagram.com/dr_draganailic_pureaesthetic/"],
+        "medicalSpecialty": "PlasticSurgery",
+        "hasMap": "https://maps.google.com/?q=Bulevar+Dositeja+Obradovića+50a,+Loznica"
+      },
+      {
+        "@type": "Physician",
+        "@id": "https://drdraganailic.com/#doctor",
+        "name": "Dr. Dragana Ilić",
+        "jobTitle": "Doktor estetske medicine",
+        "worksFor": { "@id": "https://drdraganailic.com/#clinic" },
+        "image": "https://drdraganailic.com/images/team/dragana-about.jpg",
+        "sameAs": ["https://www.instagram.com/dr_draganailic_pureaesthetic/"]
+      }
+    ]
+  }
+  </script>
+
   <!-- Scripts -->
   <script src="js/main.js"></script>
 

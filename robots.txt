@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /hvala.html
+
+Sitemap: https://drdraganailic.com/sitemap.xml
