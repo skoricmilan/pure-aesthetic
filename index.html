@@ -1,854 +1,360 @@
 <!DOCTYPE html>
 <html lang="sr">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
-  <!-- SEO -->
-  <title>Dr. Dragana Ilić – Pure Aesthetic | Estetska medicina Loznica</title>
-  <meta name="description" content="Dr. Dragana Ilić, doktor estetske medicine u Loznici. Hijaluronski fileri, Botox, Jalupro, mezoterapija i Glass Skin tretmani. Zakažite konsultaciju.">
-  <meta name="keywords" content="estetska medicina Loznica, fileri Loznica, botox Loznica, Dr Dragana Ilić, Pure Aesthetic, hijaluronski fileri">
-  <meta name="author" content="Dr. Dragana Ilić – Pure Aesthetic">
-  <link rel="canonical" href="https://drdraganailic.com/">
-
-  <!-- Open Graph (za dijeljenje na društvenim mrežama) -->
-  <meta property="og:title" content="Dr. Dragana Ilić – Pure Aesthetic">
-  <meta property="og:description" content="Personalizovani estetski tretmani za prirodne rezultate. Loznica.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://drdraganailic.com/">
-  <meta property="og:image" content="images/hero/og-image.jpg">
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="images/favicon.png">
-
-  <!-- Fonts -->
+  <title>Dr Dragana Ilić – Pure Aesthetic | Uskoro</title>
+  <meta name="description" content="Dr Dragana Ilić, doktor estetske medicine. Pure Aesthetic klinika, Loznica. Uskoro dostupno.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --cream:     #F5F0EB;
+      --burgundy:  #6B1A2A;
+      --gold:      #C9A96E;
+      --charcoal:  #1A1A1A;
+      --gray:      #8A8278;
+    }
 
-  <!-- Styles -->
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/variables.css">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/nav.css">
-  <link rel="stylesheet" href="css/hero.css">
-  <link rel="stylesheet" href="css/sections.css">
-  <link rel="stylesheet" href="css/services.css">
-  <link rel="stylesheet" href="css/gallery.css">
-  <link rel="stylesheet" href="css/contact.css">
-  <link rel="stylesheet" href="css/prices.css">
-  <link rel="stylesheet" href="css/footer.css">
-  <link rel="stylesheet" href="css/responsive.css">
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html, body {
+      height: 100%;
+      font-family: 'Raleway', sans-serif;
+      font-weight: 300;
+      background: var(--cream);
+      color: var(--charcoal);
+      overflow: hidden;
+    }
+
+    /* ── Grain overlay ── */
+    body::before {
+      content: '';
+      position: fixed; inset: 0; z-index: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+      pointer-events: none;
+      opacity: 0.4;
+    }
+
+    /* ── Decorative corner lines ── */
+    body::after {
+      content: '';
+      position: fixed;
+      top: 2rem; left: 2rem; right: 2rem; bottom: 2rem;
+      border: 1px solid rgba(107, 26, 42, 0.12);
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    /* ── Layout ── */
+    .page {
+      position: relative; z-index: 1;
+      height: 100vh;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    /* ── Left panel ── */
+    .left {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 4rem 5vw 4rem 6vw;
+      border-right: 1px solid rgba(107, 26, 42, 0.10);
+    }
+
+    .logo {
+      display: flex;
+      flex-direction: column;
+      gap: 0.3rem;
+    }
+
+    .logo-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(1.1rem, 2vw, 1.5rem);
+      font-weight: 400;
+      letter-spacing: 0.06em;
+      color: var(--charcoal);
+      opacity: 0;
+      animation: fadeUp 0.8s ease 0.2s forwards;
+    }
+
+    .logo-sub {
+      font-size: 0.6rem;
+      font-weight: 500;
+      letter-spacing: 0.4em;
+      text-transform: uppercase;
+      color: var(--gold);
+      opacity: 0;
+      animation: fadeUp 0.8s ease 0.35s forwards;
+    }
+
+    .main-content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 2rem 0;
+    }
+
+    .eyebrow {
+      font-size: 0.65rem;
+      font-weight: 500;
+      letter-spacing: 0.4em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 1.5rem;
+      opacity: 0;
+      animation: fadeUp 0.8s ease 0.5s forwards;
+    }
+
+    .headline {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(3rem, 6vw, 6.5rem);
+      font-weight: 300;
+      line-height: 0.95;
+      color: var(--charcoal);
+      margin-bottom: 2.5rem;
+      opacity: 0;
+      animation: fadeUp 0.8s ease 0.65s forwards;
+    }
+
+    .headline em {
+      font-style: italic;
+      color: var(--burgundy);
+      display: block;
+    }
+
+    .divider {
+      width: 3rem;
+      height: 1px;
+      background: var(--burgundy);
+      margin-bottom: 2rem;
+      opacity: 0;
+      animation: expandWidth 0.8s ease 0.85s forwards;
+      transform-origin: left;
+    }
+
+    .desc {
+      font-size: 0.88rem;
+      line-height: 1.9;
+      color: var(--gray);
+      max-width: 360px;
+      margin-bottom: 3rem;
+      opacity: 0;
+      animation: fadeUp 0.8s ease 1s forwards;
+    }
+
+
+
+    /* ── Bottom left ── */
+    .bottom {
+      opacity: 0;
+      animation: fadeUp 0.8s ease 1.3s forwards;
+    }
+
+    .social-links {
+      display: flex;
+      gap: 1.5rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .social-links a {
+      font-size: 0.65rem;
+      font-weight: 500;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--gray);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .social-links a:hover { color: var(--burgundy); }
+
+    .address {
+      font-size: 0.72rem;
+      color: var(--gray);
+      letter-spacing: 0.06em;
+      line-height: 1.6;
+    }
+
+    /* ── Right panel ── */
+    .right {
+      position: relative;
+      overflow: hidden;
+      background: var(--charcoal);
+    }
+
+    .right-img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      object-position: top center;
+      opacity: 0.75;
+      animation: imgReveal 1.4s ease 0.1s forwards;
+      filter: saturate(0.7);
+    }
+
+    /* Overlay gradient */
+    .right::after {
+      content: '';
+      position: absolute; inset: 0;
+      background: linear-gradient(
+        135deg,
+        rgba(107, 26, 42, 0.25) 0%,
+        transparent 60%,
+        rgba(26,26,26,0.3) 100%
+      );
+      pointer-events: none;
+    }
+
+    /* Vertical text on right */
+    .right-text {
+      position: absolute;
+      right: 2.5rem;
+      top: 50%;
+      transform: translateY(-50%) rotate(90deg);
+      transform-origin: center;
+      font-size: 0.6rem;
+      font-weight: 500;
+      letter-spacing: 0.4em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.45);
+      white-space: nowrap;
+      z-index: 2;
+      opacity: 0;
+      animation: fadeIn 1s ease 1.5s forwards;
+    }
+
+    /* Corner tag */
+    .corner-tag {
+      position: absolute;
+      bottom: 3rem;
+      left: 3rem;
+      z-index: 2;
+      opacity: 0;
+      animation: fadeUp 0.8s ease 1.4s forwards;
+    }
+
+    .corner-tag-line {
+      width: 2rem;
+      height: 1px;
+      background: var(--gold);
+      margin-bottom: 0.8rem;
+    }
+
+    .corner-tag-text {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-size: 1.1rem;
+      color: rgba(255,255,255,0.8);
+      line-height: 1.5;
+      max-width: 220px;
+    }
+
+    /* ── Animations ── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+    }
+
+    @keyframes expandWidth {
+      from { opacity: 0; transform: scaleX(0); }
+      to   { opacity: 1; transform: scaleX(1); }
+    }
+
+    @keyframes imgReveal {
+      from { opacity: 0; transform: scale(1.04); }
+      to   { opacity: 0.75; transform: scale(1); }
+    }
+
+    /* ── Mobile ── */
+    @media (max-width: 768px) {
+      html, body { overflow: auto; }
+
+      body::after {
+        top: 1rem; left: 1rem; right: 1rem; bottom: 1rem;
+      }
+
+      .page {
+        grid-template-columns: 1fr;
+        grid-template-rows: 50vh 1fr;
+        height: auto;
+        min-height: 100vh;
+      }
+
+      .right { order: -1; }
+      .right-text { display: none; }
+
+      .left {
+        border-right: none;
+        border-top: 1px solid rgba(107,26,42,0.10);
+        padding: 3rem 6vw;
+        gap: 2.5rem;
+      }
+
+      .notify-row { max-width: 100%; }
+
+      .headline { font-size: clamp(2.8rem, 12vw, 4rem); }
+    }
+  </style>
 </head>
 <body>
+<div class="page">
 
-  <!-- ══════════════════════════════
-       NAVIGATION
-  ══════════════════════════════ -->
-  <nav id="navbar">
-    <a href="#" class="nav-logo">
-      Dr. Dragana Ilić
-      <span>Pure Aesthetic</span>
-    </a>
-
-    <button class="nav-toggle" id="navToggle" aria-label="Otvori meni" data-i18n-aria="nav_toggle">
-      <span></span><span></span><span></span>
-    </button>
-
-    <ul class="nav-links" id="navLinks">
-      <li><a href="#o-meni" data-i18n="nav_about">O Meni</a></li>
-      <li><a href="#tretmani" data-i18n="nav_treatments">Tretmani</a></li>
-      <li><a href="#cenovnik" data-i18n="nav_prices">Cenovnik</a></li>
-      <li><a href="#rezultati" data-i18n="nav_results">Rezultati</a></li>
-      <li><a href="#utisci" data-i18n="nav_testimonials">Utisci</a></li>
-      <li><a href="#kontakt" data-i18n="nav_contact">Kontakt</a></li>
-    </ul>
-
-    <div class="lang-switcher">
-      <button class="lang-btn active" data-lang="sr">SR</button>
-      <span class="lang-sep">|</span>
-      <button class="lang-btn" data-lang="en">EN</button>
+  <!-- LEFT -->
+  <div class="left">
+    <div class="logo">
+      <span class="logo-name">Dr Dragana Ilić</span>
+      <span class="logo-sub">Pure Aesthetic · Loznica</span>
     </div>
 
-    <a href="#kontakt" class="nav-cta" data-i18n="nav_cta">Zakazi Termin</a>
-  </nav>
-
-  <!-- ══════════════════════════════
-       HERO
-  ══════════════════════════════ -->
-  <section class="hero" id="pocetna">
-    <div class="hero-left">
-      <p class="hero-tag fade-up" data-i18n="hero_tag">Estetska Medicina · Loznica</p>
-      <h1 class="hero-title fade-up" data-i18n="hero_title">
+    <div class="main-content">
+      <p class="eyebrow">Uskoro dostupno</p>
+      <h1 class="headline">
         Nova era<br>
-        <em>lepote</em><br>
-        je stigla.
+        <em>lepote</em>
       </h1>
-      <p class="hero-subtitle fade-up">Dr. Dragana Ilić — Pure Aesthetic</p>
-      <p class="hero-desc fade-up" data-i18n="hero_desc">
-        Personalizovani tretmani za prirodne rezultate koji odražavaju vašu pravu ljepotu.
-        Hijaluronski fileri, Botox, Jalupro i najsavremeniji estetski zahvati u sigurnom i
-        luksuznom okruženju.
+      <div class="divider"></div>
+      <p class="desc">
+        Radimo na nečem posebnom. Uskoro vas pozivamo u naš novi digitalni prostor 
+        posvećen vašoj lepoti i samopouzdanju.
       </p>
-      <div class="hero-btns fade-up">
-        <a href="#kontakt" class="btn-primary" data-i18n="hero_btn_primary">Zakazi Konsultaciju</a>
-        <a href="#tretmani" class="btn-outline" data-i18n="hero_btn_outline">Naši Tretmani</a>
-      </div>
+
+
     </div>
 
-    <div class="hero-right">
-      <img
-        src="images/hero/dragana-hero.jpg"
-        alt="Dr. Dragana Ilić – Pure Aesthetic Loznica"
-        class="hero-img"
-        onerror="this.parentElement.classList.add('no-image')"
-      >
-      <div class="hero-img-fallback">
-        <span class="fallback-label">Fotografija</span>
-        <span class="fallback-note">images/hero/dragana-hero.jpg</span>
+    <div class="bottom">
+      <div class="social-links">
+        <a href="https://instagram.com/dr_draganailic_pureaesthetic" target="_blank">Instagram</a>
       </div>
+      <p class="address">
+        Bulevar Dositeja Obradovića 50a<br>
+        Loznica, Srbija
+      </p>
     </div>
-  </section>
-
-  <!-- ══════════════════════════════
-       SERVICES STRIP
-  ══════════════════════════════ -->
-  <div class="strip">
-    <span>Hijaluronski Fileri</span>
-    <span class="strip-dot">✦</span>
-    <span>Botox</span>
-    <span class="strip-dot">✦</span>
-    <span>Jalupro</span>
-    <span class="strip-dot">✦</span>
-    <span>Mezoterapija</span>
-    <span class="strip-dot">✦</span>
-    <span>Glass Skin</span>
-    <span class="strip-dot">✦</span>
-    <span>Profhilo</span>
-    <span class="strip-dot">✦</span>
-    <span data-i18n="strip_consultation">Skincare Konsultacija</span>
   </div>
 
-  <!-- ══════════════════════════════
-       O MENI
-  ══════════════════════════════ -->
-  <section class="about section" id="o-meni">
-    <div class="about-img-wrap">
-      <img
-        src="images/team/dragana-about.jpg"
-        alt="Dr. Dragana Ilić"
-        class="about-img"
-        onerror="this.parentElement.classList.add('no-image')"
-      >
-      <div class="about-img-fallback">
-        <span class="fallback-label">Fotografija</span>
-        <span class="fallback-note">images/team/dragana-about.jpg</span>
-      </div>
-      <blockquote class="about-quote" data-i18n="about_quote">
-        "Lepota nije u savršenstvu — ona je u tome da se osećaš kao svoja najbolja verzija."
-      </blockquote>
-    </div>
-
-    <div class="about-content">
-      <p class="section-tag fade-up" data-i18n="about_tag">O Meni</p>
-      <h2 class="section-title fade-up" data-i18n="about_title">Doktor estetske<br><em>medicine</em></h2>
-      <p class="about-text fade-up" data-i18n="about_text1">
-        Zdravo! Ja sam Dr. Dragana Ilić, doktor estetske medicine i osnivačica Pure Aesthetic
-        klinike u Loznici. Moja misija je da svakoj osobi pomognem da postigne prirodan,
-        blistav izgled koji odražava njenu unutrašnju snagu i samopouzdanje.
-      </p>
-      <p class="about-text fade-up" data-i18n="about_text2">
-        Svaki tretman pristupam individualno — jer svako lice ima svoju priču, i svaka
-        intervencija treba biti prilagođena upravo vama. Koristim isključivo visokokvalitetne,
-        certificirane preparate provjerenih proizvođača.
-      </p>
-      <div class="credentials fade-up">
-        <div class="cred-item">
-          <span class="cred-dot"></span>
-          <span data-i18n="cred1">Doktor estetske medicine</span>
-        </div>
-        <div class="cred-item">
-          <span class="cred-dot"></span>
-          <span data-i18n="cred2">Specijalizacija: fileri, Botox, regenerativni tretmani</span>
-        </div>
-        <div class="cred-item">
-          <span class="cred-dot"></span>
-          <span data-i18n="cred3">Vlasnica Pure Aesthetic klinike, Loznica</span>
-        </div>
-        <div class="cred-item">
-          <span class="cred-dot"></span>
-          <span data-i18n="cred4">Certifikovani Jalupro i Profhilo aplikator</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ══════════════════════════════
-       TRETMANI
-  ══════════════════════════════ -->
-  <section class="services section" id="tretmani">
-    <div class="services-header">
-      <p class="section-tag fade-up" data-i18n="services_tag">Tretmani</p>
-      <h2 class="section-title fade-up" data-i18n="services_title">Šta nudimo</h2>
-      <p class="section-desc fade-up" data-i18n="services_desc">
-        Svaki tretman je personalizovan prema vašim potrebama i željama.
-      </p>
-    </div>
-
-    <div class="services-grid">
-
-      <div class="service-card fade-up">
-        <div class="service-num">01</div>
-        <h3 class="service-title" data-i18n="s1_title">Hijaluronski Fileri</h3>
-        <p class="service-desc" data-i18n="s1_desc">
-          Povećanje i oblikovanje usana, korekcija nosa, volumizacija jagodica i popunjavanje
-          bora — prirodni rezultati koji traju 9–18 mjeseci.
-        </p>
-        <div class="service-links">
-          <a href="#kontakt" class="service-link" data-i18n="s_link">Zakazi →</a>
-          <a href="#cenovnik" class="service-price-link" data-tab="fileri" data-i18n="s_prices">Cene →</a>
-        </div>
-      </div>
-
-      <div class="service-card fade-up">
-        <div class="service-num">02</div>
-        <h3 class="service-title" data-i18n="s2_title">Botox</h3>
-        <p class="service-desc" data-i18n="s2_desc">
-          Relaksacija mimičnih mišića za glatko čelo i pomlađen izgled. Precizan i bezbolan
-          zahvat s vidljivim efektom već za nekoliko dana.
-        </p>
-        <div class="service-links">
-          <a href="#kontakt" class="service-link" data-i18n="s_link">Zakazi →</a>
-          <a href="#cenovnik" class="service-price-link" data-tab="botox" data-i18n="s_prices">Cene →</a>
-        </div>
-      </div>
-
-      <div class="service-card fade-up">
-        <div class="service-num">03</div>
-        <h3 class="service-title" data-i18n="s3_title">Jalupro &amp; Profhilo</h3>
-        <p class="service-desc" data-i18n="s3_desc">
-          Dubinska biorevitalizacija koja stimuliše produkciju kolagena i elastina.
-          Koža postaje blistavija, čvršća i mlađa iznutra.
-        </p>
-        <div class="service-links">
-          <a href="#kontakt" class="service-link" data-i18n="s_link">Zakazi →</a>
-          <a href="#cenovnik" class="service-price-link" data-tab="biorev" data-i18n="s_prices">Cene →</a>
-        </div>
-      </div>
-
-      <div class="service-card fade-up">
-        <div class="service-num">04</div>
-        <h3 class="service-title" data-i18n="s4_title">Mezoterapija</h3>
-        <p class="service-desc" data-i18n="s4_desc">
-          Kokteli vitamina i aktivnih supstanci direktno u kožu za intenzivnu njegu,
-          hidrataciju i osvježavanje tena tokom cijele godine.
-        </p>
-        <div class="service-links">
-          <a href="#kontakt" class="service-link" data-i18n="s_link">Zakazi →</a>
-          <a href="#cenovnik" class="service-price-link" data-tab="mezo" data-i18n="s_prices">Cene →</a>
-        </div>
-      </div>
-
-      <div class="service-card fade-up">
-        <div class="service-num">05</div>
-        <h3 class="service-title" data-i18n="s5_title">Glass Skin</h3>
-        <p class="service-desc" data-i18n="s5_desc">
-          Kombinacija tretmana za postizanje prozirne, blistave kože — duboka hidratacija,
-          ujednačen ten i zdravi sjaj koji govori sam za sebe.
-        </p>
-        <div class="service-links">
-          <a href="#kontakt" class="service-link" data-i18n="s_link">Zakazi →</a>
-          <a href="#cenovnik" class="service-price-link" data-tab="prp" data-i18n="s_prices">Cene →</a>
-        </div>
-      </div>
-
-      <div class="service-card fade-up">
-        <div class="service-num">06</div>
-        <h3 class="service-title" data-i18n="s6_title">Konsultacija</h3>
-        <p class="service-desc" data-i18n="s6_desc">
-          Svaka posjeta počinje detaljnom analizom kože i željenih ciljeva.
-          Zajedno određujemo koji tretman je prava opcija za vaše lice.
-        </p>
-        <div class="service-links">
-          <a href="#kontakt" class="service-link" data-i18n="s_link">Zakazi →</a>
-          <a href="#cenovnik" class="service-price-link" data-i18n="s_prices">Cene →</a>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ══════════════════════════════
-       CENOVNIK
-  ══════════════════════════════ -->
-  <section class="prices section" id="cenovnik">
-    <div class="prices-header">
-      <p class="section-tag fade-up" data-i18n="prices_tag">Cenovnik</p>
-      <h2 class="section-title fade-up" data-i18n="prices_title">Naše <em>usluge i cene</em></h2>
-    </div>
-
-    <div class="prices-tabs fade-up" id="priceTabs">
-      <button class="price-tab active" data-cat="botox" data-i18n="cat_botox">Botulinum Toxin</button>
-      <button class="price-tab" data-cat="fileri" data-i18n="cat_fileri">Hijaluronski Fileri</button>
-      <button class="price-tab" data-cat="biorev" data-i18n="cat_biorev">Biorevitalizacija</button>
-      <button class="price-tab" data-cat="mezo" data-i18n="cat_mezo">Mezoterapija</button>
-      <button class="price-tab" data-cat="kolagen" data-i18n="cat_kolagen">Kolagen Stimulatori</button>
-      <button class="price-tab" data-cat="prp" data-i18n="cat_prp">PRP & Mikronidling</button>
-      <button class="price-tab" data-cat="poli" data-i18n="cat_poli">Polinukleotidi</button>
-      <button class="price-tab" data-cat="piling" data-i18n="cat_piling">Hemijski Piling</button>
-    </div>
-
-    <div class="fade-up">
-
-      <!-- BOTULINUM TOXIN -->
-      <div class="price-list active" data-cat="botox">
-        <div class="price-item">
-          <span class="price-name">Botox — jedna regija</span>
-          <span class="price-val">100 €</span>
-        </div>
-        <div class="price-item">
-          <span class="price-name">Botox — dve regije</span>
-          <span class="price-val">200 €</span>
-        </div>
-        <div class="price-item">
-          <span class="price-name">Botox — tri regije</span>
-          <span class="price-val">250 €</span>
-        </div>
-        <div class="price-item">
-          <span class="price-name">Lip flip, Gummy smile, Bunny lines</span>
-          <span class="price-val">60 €</span>
-        </div>
-        <div class="price-item">
-          <span class="price-name">Korekcija brade — mentalni mišić</span>
-          <span class="price-val">60 €</span>
-        </div>
-        <div class="price-item">
-          <span class="price-name">Nefertiti lift — donja trećina lica i vrat</span>
-          <span class="price-val">220 €</span>
-        </div>
-        <div class="price-item">
-          <span class="price-name">Hiperhidroza (pojačano znojenje) — po regiji</span>
-          <span class="price-val">350 €</span>
-        </div>
-      </div>
-
-      <!-- HIJALURONSKI FILERI -->
-      <div class="price-list" data-cat="fileri">
-        <div class="price-item">
-          <span class="price-name">Hijaluronski filer 0,6 ml
-            <span class="price-sub">Juvederm, Belotero, Restylane</span>
-          </span>
-          <span class="price-val">170 €</span>
-        </div>
-        <div class="price-item">
-          <span class="price-name">Hijaluronski filer 1 ml
-            <span class="price-sub">Juvederm, Belotero, Restylane</span>
-          </span>
-          <span class="price-val">250 €</span>
-        </div>
-        <div class="price-item">
-          <span class="price-name">Hijaluronski filer 3 ml
-            <span class="price-sub">Juvederm, Belotero, Restylane</span>
-          </span>
-          <span class="price-val">650 €</span>
-        </div>
-      </div>
-
-      <!-- BIOREVITALIZACIJA I SKINBUSTERI -->
-      <div class="price-list" data-cat="biorev">
-        <div class="price-item">
-          <span class="price-name">Profhilo</span>
-          <span class="price-val">230 €</span>
-        </div>
-        <div class="price-item">
-          <span class="price-name">Profhilo Structura</span>
-          <span class="price-val">250 €</span>
-        </div>
-        <div class="price-item">
-          <span class="price-name">Juvederm Volite
-            <span class="price-sub">1 ml / 2 ml</span>
-          </span>
-          <span class="price-val">220 € / 400 €</span>
-        </div>
-        <div class="price-item">
-          <span class="price-name">Jalupro Super Hydro</span>
-          <span class="price-val">220 €</span>
-        </div>
-        <div class="price-item">
-          <span class="price-name">Jalupro HMW</span>
-          <span class="price-val">120 €</span>
-        </div>
-        <div class="price-item">
-          <span class="price-name">Jalupro Young Eye</span>
-          <span class="price-val">140 €</span>
-        </div>
-        <div class="price-item">
-          <span class="price-name">RRS Long Lasting — LOLA</span>
-          <span class="price-val">200 €</span>
-        </div>
-        <div class="price-item">
-          <span class="price-name">Restylane Booster
-            <span class="price-sub">1 ml / 2 ml</span>
-          </span>
-          <span class="price-val">200 € / 370 €</span>
-        </div>
-        <div class="price-item">
-          <span class="price-name">Belotero Revive
-            <span class="price-sub">1 ml / 2 ml</span>
-          </span>
-          <span class="price-val">200 € / 370 €</span>
-        </div>
-      </div>
-
-      <!-- MEZOTERAPIJA -->
-      <div class="price-list" data-cat="mezo">
-        <div class="price-item">
-          <span class="price-name">Mezoterapija lica</span>
-          <span class="price-val">60 €</span>
-        </div>
-        <div class="price-item">
-          <span class="price-name">Mezoterapija lica, vrata i dekoltea</span>
-          <span class="price-val">100 €</span>
-        </div>
-        <div class="price-item">
-          <span class="price-name">Mezoterapija — Jalupro Classic</span>
-          <span class="price-val">90 €</span>
-        </div>
-        <div class="price-item">
-          <span class="price-name">Mezoterapija celulita — po regiji</span>
-          <span class="price-val">70 €</span>
-        </div>
-        <div class="price-item">
-          <span class="price-name">Mezoterapija kose</span>
-          <span class="price-val">60 €</span>
-        </div>
-        <div class="price-item">
-          <span class="price-name">Lipoliza</span>
-          <span class="price-val">70 €</span>
-        </div>
-        <div class="price-item">
-          <span class="price-name">Lipoliza — Lemon Bottle 10 ml</span>
-          <span class="price-val">70 €</span>
-        </div>
-      </div>
-
-      <!-- KOLAGEN STIMULATORI -->
-      <div class="price-list" data-cat="kolagen">
-        <div class="price-item">
-          <span class="price-name">Lanluma — full face</span>
-          <span class="price-val">500 €</span>
-        </div>
-        <div class="price-item">
-          <span class="price-name">Lanluma — face lift</span>
-          <span class="price-val">350 €</span>
-        </div>
-        <div class="price-item">
-          <span class="price-name">Lanluma — regija</span>
-          <span class="price-val">150 €</span>
-        </div>
-        <div class="price-item">
-          <span class="price-name">Lanluma — vrat i dekolte</span>
-          <span class="price-val">300 €</span>
-        </div>
-        <div class="price-item">
-          <span class="price-name">Lanluma — korekcija celulita po regiji</span>
-          <span class="price-val">200 €</span>
-        </div>
-        <div class="price-item">
-          <span class="price-name">Lanluma — podizanje zadnjice</span>
-          <span class="price-val">800 €</span>
-        </div>
-        <div class="price-item">
-          <span class="price-name">HarmoniCa Juvederm</span>
-          <span class="price-val">300 €</span>
-        </div>
-      </div>
-
-      <!-- PRP & MIKRONIDLING -->
-      <div class="price-list" data-cat="prp">
-        <div class="price-item">
-          <span class="price-name">PRP — Regeneracija krvnom plazmom, lice</span>
-          <span class="price-val">180 €</span>
-        </div>
-        <div class="price-item">
-          <span class="price-name">PRP — lice, vrat i dekolte</span>
-          <span class="price-val">200 €</span>
-        </div>
-        <div class="price-item">
-          <span class="price-name">PRP — tretman kose</span>
-          <span class="price-val">150 €</span>
-        </div>
-        <div class="price-item">
-          <span class="price-name">Cellular Matrix — PRP + hijaluronska kiselina</span>
-          <span class="price-val">230 €</span>
-        </div>
-        <div class="price-item">
-          <span class="price-name">Skin Pen mikronidling</span>
-          <span class="price-val">120 €</span>
-        </div>
-        <div class="price-item">
-          <span class="price-name">Skin Pen mikronidling + PRP</span>
-          <span class="price-val">270 €</span>
-        </div>
-        <div class="price-item">
-          <span class="price-name">Skin Pen mikronidling + Skinbuster</span>
-          <span class="price-val">280 €</span>
-        </div>
-        <div class="price-item">
-          <span class="price-name">Skin Pen mikronidling + Egzozomi</span>
-          <span class="price-val">260 €</span>
-        </div>
-      </div>
-
-      <!-- POLINUKLEOTIDI -->
-      <div class="price-list" data-cat="poli">
-        <div class="price-item">
-          <span class="price-name">Plinest — bioregeneracija lica</span>
-          <span class="price-val">200 €</span>
-        </div>
-        <div class="price-item">
-          <span class="price-name">Plinest — bioregeneracija lica, vrat i dekolte</span>
-          <span class="price-val">300 €</span>
-        </div>
-        <div class="price-item">
-          <span class="price-name">Plinest — bioregeneracija podočnjaka</span>
-          <span class="price-val">200 €</span>
-        </div>
-        <div class="price-item">
-          <span class="price-name">Plinest Hair — bioregeneracija kose</span>
-          <span class="price-val">200 €</span>
-        </div>
-        <div class="price-item">
-          <span class="price-name">Newest — bioregeneracija lica</span>
-          <span class="price-val">200 €</span>
-        </div>
-      </div>
-
-      <!-- HEMIJSKI PILING -->
-      <div class="price-list" data-cat="piling">
-        <div class="price-item">
-          <span class="price-name">Mesopeel MD</span>
-          <span class="price-val">55 €</span>
-        </div>
-        <div class="price-item">
-          <span class="price-name">Jalupro GLow Peel</span>
-          <span class="price-val">55 €</span>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ══════════════════════════════
-       KLINIKA
-  ══════════════════════════════ -->
-  <section class="clinic section">
-    <div class="clinic-header">
-      <p class="section-tag fade-up" data-i18n="clinic_tag">Naša Klinika</p>
-      <h2 class="section-title fade-up" data-i18n="clinic_title">Pure Aesthetic — <em>nova era lepote</em></h2>
-    </div>
-    <div class="clinic-grid">
-      <div class="clinic-img fade-up">
-        <img src="images/clinic/klinika-1.jpg" alt="Pure Aesthetic klinika Loznica"
-          onerror="this.parentElement.classList.add('no-image')">
-        <div class="clinic-img-fallback">
-          <span class="fallback-note">images/clinic/klinika-1.jpg</span>
-        </div>
-      </div>
-      <div class="clinic-img fade-up">
-        <img src="images/clinic/klinika-2.jpg" alt="Pure Aesthetic klinika interior"
-          onerror="this.parentElement.classList.add('no-image')">
-        <div class="clinic-img-fallback">
-          <span class="fallback-note">images/clinic/klinika-2.jpg</span>
-        </div>
-      </div>
-      <div class="clinic-img fade-up">
-        <img src="images/clinic/klinika-3.jpg" alt="Pure Aesthetic tretman kabinet"
-          onerror="this.parentElement.classList.add('no-image')">
-        <div class="clinic-img-fallback">
-          <span class="fallback-note">images/clinic/klinika-3.jpg</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ══════════════════════════════
-       BEFORE / AFTER
-  ══════════════════════════════ -->
-  <section class="results section" id="rezultati">
-    <div class="results-header">
-      <p class="section-tag fade-up" data-i18n="results_tag">Rezultati</p>
-      <h2 class="section-title fade-up" data-i18n="results_title">Pre &amp; <em>Posle</em></h2>
-      <p class="section-desc fade-up" data-i18n="results_desc">
-        Prirodni rezultati koji govore sami za sebe.
-      </p>
-    </div>
-
-    <div class="results-grid">
-      <div class="result-item fade-up">
-        <div class="result-imgs">
-          <div class="result-img-wrap">
-            <img src="images/before-after/usne-before.jpg" alt="Usne prije tretmana"
-              onerror="this.parentElement.classList.add('no-image')">
-            <div class="result-img-fallback"><span data-i18n="badge_before">Prije</span></div>
-            <span class="result-badge before" data-i18n="badge_before">Prije</span>
-          </div>
-          <div class="result-img-wrap">
-            <img src="images/before-after/usne-after.jpg" alt="Usne poslije tretmana"
-              onerror="this.parentElement.classList.add('no-image')">
-            <div class="result-img-fallback"><span data-i18n="badge_after">Poslije</span></div>
-            <span class="result-badge after" data-i18n="badge_after">Poslije</span>
-          </div>
-        </div>
-        <div class="result-label" data-i18n="r1_label">Hijaluronski Fileri — Usne</div>
-      </div>
-
-      <div class="result-item fade-up">
-        <div class="result-imgs">
-          <div class="result-img-wrap">
-            <img src="images/before-after/lice-before.jpg" alt="Lice prije tretmana"
-              onerror="this.parentElement.classList.add('no-image')">
-            <div class="result-img-fallback"><span data-i18n="badge_before">Prije</span></div>
-            <span class="result-badge before" data-i18n="badge_before">Prije</span>
-          </div>
-          <div class="result-img-wrap">
-            <img src="images/before-after/lice-after.jpg" alt="Lice poslije tretmana"
-              onerror="this.parentElement.classList.add('no-image')">
-            <div class="result-img-fallback"><span data-i18n="badge_after">Poslije</span></div>
-            <span class="result-badge after" data-i18n="badge_after">Poslije</span>
-          </div>
-        </div>
-        <div class="result-label" data-i18n="r2_label">Fileri — Jagodice &amp; Volumizacija</div>
-      </div>
-
-      <div class="result-item fade-up">
-        <div class="result-imgs">
-          <div class="result-img-wrap">
-            <img src="images/before-after/koza-before.jpg" alt="Koža prije tretmana"
-              onerror="this.parentElement.classList.add('no-image')">
-            <div class="result-img-fallback"><span data-i18n="badge_before">Prije</span></div>
-            <span class="result-badge before" data-i18n="badge_before">Prije</span>
-          </div>
-          <div class="result-img-wrap">
-            <img src="images/before-after/koza-after.jpg" alt="Koža poslije tretmana"
-              onerror="this.parentElement.classList.add('no-image')">
-            <div class="result-img-fallback"><span data-i18n="badge_after">Poslije</span></div>
-            <span class="result-badge after" data-i18n="badge_after">Poslije</span>
-          </div>
-        </div>
-        <div class="result-label" data-i18n="r3_label">Biorevitalizacija — Glass Skin</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ══════════════════════════════
-       TESTIMONIALS
-  ══════════════════════════════ -->
-  <section class="testimonials section" id="utisci">
-    <div class="test-header">
-      <p class="section-tag fade-up" data-i18n="test_tag">Utisci</p>
-      <h2 class="section-title fade-up" data-i18n="test_title">Što kažu naše <em>klijentkinje</em></h2>
-    </div>
-    <div class="test-grid">
-
-      <div class="test-card fade-up">
-        <div class="test-mark">"</div>
-        <p class="test-text" data-i18n="t1_text">
-          Dr. Dragana je nevjerojatna. Bila sam nervozna zbog usana, ali rezultat je toliko
-          prirodan da svi misle da sam se samo "odmorila". Definitivno se vraćam!
-        </p>
-        <p class="test-author" data-i18n="t1_author">— Ana M., Loznica</p>
-      </div>
-
-      <div class="test-card fade-up">
-        <div class="test-mark">"</div>
-        <p class="test-text" data-i18n="t2_text">
-          Profesionalna, topla i precizna. Objasnila mi je svaki korak i osigurala da se
-          osjećam udobno tokom cijelog tretmana. Koža mi nikad nije bila bolja.
-        </p>
-        <p class="test-author" data-i18n="t2_author">— Milica S., Beograd</p>
-      </div>
-
-      <div class="test-card fade-up">
-        <div class="test-mark">"</div>
-        <p class="test-text" data-i18n="t3_text">
-          Pure Aesthetic klinika je pravo malo blago. Ambijent, usluga i rezultati —
-          sve je na najvišem nivou. Preporučujem svim prijateljicama!
-        </p>
-        <p class="test-author" data-i18n="t3_author">— Jovana P., Valjevo</p>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ══════════════════════════════
-       CONTACT
-  ══════════════════════════════ -->
-  <section class="contact section" id="kontakt">
-    <div class="contact-info">
-      <p class="section-tag fade-up" data-i18n="contact_tag">Kontakt</p>
-      <h2 class="section-title fade-up" data-i18n="contact_title">Zakažite<br>svoju <em>konsultaciju</em></h2>
-      <p class="contact-intro fade-up" data-i18n="contact_intro">
-        Napišite nam i odgovorićemo u najkraćem roku. Prva konsultacija je besplatna.
-      </p>
-
-      <div class="contact-details fade-up">
-        <div class="contact-detail">
-          <div class="detail-icon">📍</div>
-          <div>
-            <p class="detail-label" data-i18n="addr_label">Adresa</p>
-            <p class="detail-val">Bulevar Dositeja Obradovića 50a, Loznica</p>
-          </div>
-        </div>
-        <div class="contact-detail">
-          <div class="detail-icon">📱</div>
-          <div>
-            <p class="detail-label">Instagram</p>
-            <p class="detail-val">
-              <a href="https://www.instagram.com/dr_draganailic_pureaesthetic/" target="_blank">
-                @dr_draganailic_pureaesthetic
-              </a>
-            </p>
-          </div>
-        </div>
-        <div class="contact-detail">
-          <div class="detail-icon">🕐</div>
-          <div>
-            <p class="detail-label" data-i18n="hours_label">Radno Vrijeme</p>
-            <p class="detail-val" data-i18n="hours_val">Pon – Pet: 09:00 – 18:00<br>Subota: po dogovoru</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Web3Forms — zamijeni YOUR_ACCESS_KEY sa pravim ključem sa web3forms.com -->
-    <form
-      class="contact-form fade-up"
-      action="https://api.web3forms.com/submit"
-      method="POST"
-      id="contactForm"
+  <!-- RIGHT -->
+  <div class="right">
+    <img 
+      src="images/hero/dragana-hero.jpg" 
+      alt="Dr Dragana Ilić"
+      class="right-img"
+      onerror="this.style.display='none'; this.parentElement.style.background='#6B1A2A'"
     >
-      <input type="hidden" name="access_key" value="48b03c38-b853-482a-9328-bdc02c793e74">
-      <input type="hidden" name="subject" value="Nova poruka — Pure Aesthetic sajt">
-      <input type="hidden" name="redirect" value="https://drdraganailic.com/hvala.html">
-      <input type="checkbox" name="botcheck" style="display:none">
-
-      <div class="form-row">
-        <div class="form-group">
-          <label class="form-label" for="ime" data-i18n="form_name">Ime</label>
-          <input class="form-input" type="text" id="ime" name="ime" data-i18n-placeholder="ph_name" placeholder="Vaše ime" required>
-        </div>
-        <div class="form-group">
-          <label class="form-label" for="prezime" data-i18n="form_surname">Prezime</label>
-          <input class="form-input" type="text" id="prezime" name="prezime" data-i18n-placeholder="ph_surname" placeholder="Vaše prezime">
-        </div>
-      </div>
-
-      <div class="form-group">
-        <label class="form-label" for="kontakt-info" data-i18n="form_contact">Telefon ili Email</label>
-        <input class="form-input" type="text" id="kontakt-info" name="kontakt" placeholder="+381..." required>
-      </div>
-
-      <div class="form-group">
-        <label class="form-label" for="tretman" data-i18n="form_treatment">Zainteresovani za</label>
-        <select class="form-input form-select" id="tretman" name="tretman">
-          <option value="" data-i18n="opt_select">Odaberite tretman...</option>
-          <option>Hijaluronski fileri</option>
-          <option>Botox</option>
-          <option>Jalupro / Profhilo</option>
-          <option>Mezoterapija</option>
-          <option>Glass Skin tretman</option>
-          <option data-i18n="opt_konsultacija">Konsultacija</option>
-          <option data-i18n="opt_other">Nešto drugo</option>
-        </select>
-      </div>
-
-      <div class="form-group">
-        <label class="form-label" for="poruka" data-i18n="form_message">Poruka</label>
-        <textarea class="form-input form-textarea" id="poruka" name="poruka" data-i18n-placeholder="ph_message" placeholder="Napišite nam..."></textarea>
-      </div>
-
-      <button type="submit" class="btn-primary btn-full" id="submitBtn" data-i18n="form_submit">
-        Pošalji Poruku
-      </button>
-      <p class="form-note" data-i18n="form_note">* Odgovorićemo u roku od 24 sata.</p>
-      <div class="form-success" id="formSuccess" data-i18n="form_success">
-        ✓ Poruka je poslata! Uskoro ćemo vas kontaktirati.
-      </div>
-    </form>
-  </section>
-
-  <!-- ══════════════════════════════
-       FOOTER
-  ══════════════════════════════ -->
-  <footer>
-    <div class="footer-left">
-      <div class="footer-logo">
-        Dr. Dragana Ilić
-        <span>Pure Aesthetic · Loznica</span>
-      </div>
-      <p class="footer-tagline" data-i18n="footer_tagline">Nova era ljepote je stigla u grad.</p>
+    <span class="right-text">Pure Aesthetic · Estetska Medicina · Loznica</span>
+    <div class="corner-tag">
+      <div class="corner-tag-line"></div>
+      <p class="corner-tag-text">"Lepota je u tome da se osećaš kao svoja najbolja verzija."</p>
     </div>
+  </div>
 
-    <div class="footer-links">
-      <a href="#o-meni" data-i18n="nav_about">O Meni</a>
-      <a href="#tretmani" data-i18n="nav_treatments">Tretmani</a>
-      <a href="#rezultati" data-i18n="nav_results">Rezultati</a>
-      <a href="#kontakt" data-i18n="nav_contact">Kontakt</a>
-      <a href="https://www.instagram.com/dr_draganailic_pureaesthetic/" target="_blank">Instagram</a>
-    </div>
+</div>
 
-    <div class="footer-right">
-      <p class="footer-copy" data-i18n="footer_copy">© 2026 Pure Aesthetic. Sva prava zadržana.</p>
-    </div>
-  </footer>
 
-  <!-- Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "MedicalClinic",
-        "@id": "https://drdraganailic.com/#clinic",
-        "name": "Pure Aesthetic",
-        "url": "https://drdraganailic.com",
-        "logo": "https://drdraganailic.com/images/favicon.png",
-        "image": "https://drdraganailic.com/images/hero/dragana-hero.jpg",
-        "description": "Klinika estetske medicine u Loznici. Hijaluronski fileri, Botox, Jalupro, mezoterapija i Glass Skin tretmani.",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Bulevar Dositeja Obradovića 50a",
-          "addressLocality": "Loznica",
-          "addressCountry": "RS"
-        },
-        "openingHoursSpecification": [
-          {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
-            "opens": "09:00",
-            "closes": "18:00"
-          }
-        ],
-        "sameAs": ["https://www.instagram.com/dr_draganailic_pureaesthetic/"],
-        "medicalSpecialty": "PlasticSurgery",
-        "hasMap": "https://maps.google.com/?q=Bulevar+Dositeja+Obradovića+50a,+Loznica"
-      },
-      {
-        "@type": "Physician",
-        "@id": "https://drdraganailic.com/#doctor",
-        "name": "Dr. Dragana Ilić",
-        "jobTitle": "Doktor estetske medicine",
-        "worksFor": { "@id": "https://drdraganailic.com/#clinic" },
-        "image": "https://drdraganailic.com/images/team/dragana-about.jpg",
-        "sameAs": ["https://www.instagram.com/dr_draganailic_pureaesthetic/"]
-      }
-    ]
-  }
-  </script>
 
-  <!-- Scripts -->
-  <script src="js/main.js"></script>
-
-</body>
-</html>
