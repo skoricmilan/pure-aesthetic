@@ -1,0 +1,109 @@
+/* ══════════════════════════════
+   PRICES
+══════════════════════════════ */
+
+.prices {
+  background: var(--cream);
+}
+
+.prices-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+/* ── Tabs ── */
+.prices-tabs {
+  display: flex;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  border-bottom: 1px solid rgba(107, 26, 42, 0.12);
+  margin-bottom: 2.5rem;
+}
+
+.prices-tabs::-webkit-scrollbar {
+  display: none;
+}
+
+.price-tab {
+  font-family: var(--font-sans);
+  font-size: 0.63rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--charcoal);
+  opacity: 0.45;
+  padding: 0.9rem 1.5rem;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  white-space: nowrap;
+  flex-shrink: 0;
+  transition: color var(--transition), opacity var(--transition), border-color var(--transition);
+}
+
+.price-tab:hover {
+  opacity: 0.8;
+  color: var(--burgundy);
+}
+
+.price-tab.active {
+  color: var(--burgundy);
+  opacity: 1;
+  border-bottom-color: var(--burgundy);
+}
+
+/* ── List ── */
+.price-list {
+  display: none;
+  max-width: 780px;
+  margin: 0 auto;
+  animation: priceFade 0.25s ease;
+}
+
+.price-list.active {
+  display: block;
+}
+
+@keyframes priceFade {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.price-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 2rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(107, 26, 42, 0.07);
+}
+
+.price-item:last-child {
+  border-bottom: none;
+}
+
+.price-name {
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  font-weight: 300;
+  letter-spacing: 0.03em;
+  color: var(--charcoal);
+  line-height: 1.5;
+}
+
+.price-sub {
+  display: block;
+  font-size: 0.82rem;
+  opacity: 0.5;
+  margin-top: 0.15rem;
+  font-style: italic;
+}
+
+.price-val {
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--burgundy);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
