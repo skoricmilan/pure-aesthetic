@@ -23,7 +23,7 @@ body {
 }
 
 .section-title {
-  font-family: var(--font-serif);
+  font-family: var(--font-display);
   font-size: clamp(2rem, 3.5vw, 3.4rem);
   font-weight: 300;
   line-height: 1.1;
@@ -32,7 +32,9 @@ body {
 }
 
 .section-title em {
-  font-style: italic;
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-style: normal;
   color: var(--burgundy);
 }
 

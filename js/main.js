@@ -15,7 +15,7 @@ const translations = {
 
     hero_tag: 'Estetska Medicina · Loznica',
     hero_title: 'Nova era<br><em>lepote</em><br>je stigla.',
-    hero_desc: 'Personalizovani tretmani za prirodne rezultate koji odražavaju vašu pravu lepotu. Hijaluronski fileri, Botox, Jalupro i najsavremeniji estetski zahvati u sigurnom i luksuznom okruženju.',
+    hero_desc: 'Personalizovani tretmani za prirodne rezultate koji odražavaju vašu pravu lepotu. Hijaluronski fileri, Botox, biorevitalizacija i najsavremeniji estetski zahvati u sigurnom i luksuznom okruženju.',
     hero_btn_primary: 'Zakazi Konsultaciju',
     hero_btn_outline: 'Naši Tretmani',
 
@@ -26,10 +26,11 @@ const translations = {
     about_text1: 'Zdravo! Ja sam Dr. Dragana Ilić, doktor estetske medicine i osnivačica Pure Aesthetic klinike u Loznici. Moja misija je da svakoj osobi pomognem da postigne prirodan, blistav izgled koji odražava njenu unutrašnju snagu i samopouzdanje.',
     about_text2: 'Svaki tretman pristupam individualno — jer svako lice ima svoju priču, i svaka intervencija treba biti prilagođena upravo vama. Koristim isključivo visokokvalitetne, sertifikovane preparate proverenih proizvođača.',
     about_quote: '"Lepota nije u savršenstvu — ona je u tome da se osećaš kao svoja najbolja verzija."',
-    cred1: 'Doktor estetske medicine',
+    cred1: 'Doktor stomatologije i estetske medicine',
     cred2: 'Specijalizacija: fileri, Botox, regenerativni tretmani',
-    cred3: 'Vlasnica Pure Aesthetic klinike, Loznica',
-    cred4: 'Certifikovani Jalupro i Profhilo aplikator',
+    cred3: 'Certifikovani Jalupro i Profhilo aplikator',
+    cred4: 'Certifikovani i registrovani ECAMS lekar (European College of Aesthetic Medicine & Surgery)',
+    cred5: 'Vlasnica Pure Aesthetic klinike, Loznica',
 
     services_tag: 'Tretmani',
     services_title: 'Šta nudimo',
@@ -77,6 +78,7 @@ const translations = {
     addr_label: 'Adresa',
     hours_label: 'Radno Vrijeme',
     hours_val: 'Pon – Pet: 09:00 – 18:00<br>Subota: po dogovoru',
+    phone_label: 'Telefon',
 
     form_name: 'Ime',
     form_surname: 'Prezime',
@@ -124,7 +126,7 @@ const translations = {
 
     hero_tag: 'Aesthetic Medicine · Loznica',
     hero_title: 'A new era<br><em>of beauty</em><br>has arrived.',
-    hero_desc: 'Personalized treatments for natural results that reflect your true beauty. Hyaluronic fillers, Botox, Jalupro and the most advanced aesthetic procedures in a safe and luxurious environment.',
+    hero_desc: 'Personalized treatments for natural results that reflect your true beauty. Hyaluronic fillers, Botox, biorevitalization and the most advanced aesthetic procedures in a safe and luxurious environment.',
     hero_btn_primary: 'Book Consultation',
     hero_btn_outline: 'Our Treatments',
 
@@ -135,10 +137,11 @@ const translations = {
     about_text1: 'Hello! I am Dr. Dragana Ilić, doctor of aesthetic medicine and founder of Pure Aesthetic clinic in Loznica. My mission is to help each person achieve a natural, radiant look that reflects their inner strength and confidence.',
     about_text2: 'I approach every treatment individually — because every face has its own story, and every procedure should be tailored specifically to you. I use exclusively high-quality, certified products from trusted manufacturers.',
     about_quote: '"Beauty is not in perfection — it is in feeling like your best self."',
-    cred1: 'Doctor of aesthetic medicine',
+    cred1: 'Doctor of dental and aesthetic medicine',
     cred2: 'Specialization: fillers, Botox, regenerative treatments',
-    cred3: 'Owner of Pure Aesthetic clinic, Loznica',
-    cred4: 'Certified Jalupro and Profhilo applicator',
+    cred3: 'Certified Jalupro and Profhilo applicator',
+    cred4: 'Certified and registered ECAMS doctor (European College of Aesthetic Medicine & Surgery)',
+    cred5: 'Owner of Pure Aesthetic clinic, Loznica',
 
     services_tag: 'Treatments',
     services_title: 'What We Offer',
@@ -186,6 +189,7 @@ const translations = {
     addr_label: 'Address',
     hours_label: 'Working Hours',
     hours_val: 'Mon – Fri: 09:00 – 18:00<br>Saturday: by arrangement',
+    phone_label: 'Phone',
 
     form_name: 'Name',
     form_surname: 'Surname',
