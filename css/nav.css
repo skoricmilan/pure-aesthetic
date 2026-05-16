@@ -12,7 +12,7 @@
   background: rgba(245, 240, 235, 0.94);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(107, 26, 42, 0.10);
+  border-bottom: 1px solid rgba(107, 11, 30, 0.10);
   transition: padding var(--transition), box-shadow var(--transition);
   height: var(--nav-height);
 }
@@ -25,24 +25,21 @@
 
 /* Logo */
 .nav-logo {
-  font-family: var(--font-serif);
-  font-size: 1.2rem;
-  font-weight: 400;
-  letter-spacing: 0.08em;
-  color: var(--charcoal);
-  line-height: 1.2;
+  display: flex;
+  align-items: center;
   flex-shrink: 0;
+  height: 100%;
 }
 
-.nav-logo span {
+.nav-logo img {
+  height: 88px;
+  width: auto;
   display: block;
-  font-family: var(--font-sans);
-  font-size: 0.6rem;
-  font-weight: 500;
-  letter-spacing: 0.38em;
-  text-transform: uppercase;
-  color: var(--gold);
-  margin-top: 0.1rem;
+  transition: height var(--transition);
+}
+
+#navbar.scrolled .nav-logo img {
+  height: 72px;
 }
 
 /* Links */
