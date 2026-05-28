@@ -98,3 +98,42 @@
   letter-spacing: 0.18em;
   text-transform: uppercase;
 }
+
+.results-cta {
+  text-align: center;
+  margin-top: 2rem;
+  padding-top: 0.5rem;
+}
+
+.results-ig-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  color: var(--charcoal);
+  text-decoration: none;
+  transition: opacity var(--transition);
+}
+
+.results-ig-link strong {
+  color: var(--burgundy);
+  font-weight: 700;
+}
+
+.results-ig-link::after {
+  content: '→';
+  color: var(--burgundy);
+  font-size: 0.95rem;
+  transition: transform var(--transition);
+}
+
+.results-ig-link:hover {
+  opacity: 0.75;
+}
+
+.results-ig-link:hover::after {
+  transform: translateX(4px);
+}
