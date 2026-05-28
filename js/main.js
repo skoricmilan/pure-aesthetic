@@ -52,7 +52,7 @@ const translations = {
     s8_desc: 'Tretman za regeneraciju i obnavljanje kože koji poboljšava teksturu, ujednačava ten i vraća koži svež i blistav izgled. Hemijski piling pomaže kod akni, fleka, proširenih pora i prvih znakova starenja.',
     s9_title: 'Konsultacije',
     s9_desc: 'Prvi korak ka prirodnim i pažljivo odabranim estetskim tretmanima.',
-    s_link: 'Zakazi →',
+    s_link: 'Zakaži →',
     s_prices: 'Cene →',
 
     clinic_tag: 'Naša Klinika',
