@@ -68,13 +68,10 @@ const translations = {
     r3_label: 'Biorevitalizacija - Glass Skin',
 
     test_tag: 'Utisci',
-    test_title: 'Što kažu naše <em>klijentkinje</em>',
-    t1_text: 'Dr. Dragana je neverovatna. Bila sam nervozna zbog usana, ali rezultat je toliko prirodan da svi misle da sam se samo "odmorila". Definitivno se vraćam!',
-    t1_author: '- Ana M., Loznica',
-    t2_text: 'Profesionalna, topla i precizna. Objasnila mi je svaki korak i osigurala da se osećam udobno tokom celog tretmana. Koža mi nikad nije bila bolja.',
-    t2_author: '- Milica S., Beograd',
-    t3_text: 'Pure Aesthetic klinika je pravo malo blago. Ambijent, usluga i rezultati - sve je na najvišem nivou. Preporučujem svim prijateljicama!',
-    t3_author: '- Jovana P., Valjevo',
+    test_title: 'Šta kažu naše <em>klijentkinje</em>',
+    t1_text: 'Prezadovoljna sam radom i pristupom dr Dragane. Strpljiva, njezna i jako prijatna. Nije mi bilo tesko da predjem malo vise km da dodjem do nje, jer je krajnji rezultat odlican: prirodne i lijepe usne.',
+    t2_text: 'Dugogodišnji sam klijent dr Dragane i mogu iskreno da kažem da sam prezadovoljna uslugom i rezultatima. Profesionalnost, ljubaznost i posvećenost pacijentu. Ordinacija je moderna, prijatna i sve se radi veoma pažljivo i bez stresa. Svaka preporuka za Pure Aesthetic i dr Draganu Ilić.',
+    t3_text: 'Ja sam neko ko se mnogo plasi igala i uvijek sam izbjegavala sve sto ukljucuje injekcije, dok nisam dosla kod dr Dragane. Vec na konsultacijama mi je ulila povjerenje, sve mi je objasnila, na svako moje pitanje odgovorila. Radila sam botoks tri regije i mnogo sam se plasila. Medjutim, dr Dragana ima tako laganu ruku, da nisam ni osjetila bockanje. A rezultati su bili odlicni. Svi su primjetili da sam se podmladila, da izgledam svjezije ali niko nije ni pomislio da sam radila botoks, jer je dr Dragana to tako dobro uradila da sve izgleda prirodno, bez onog ukocenog izraza lica (zbog kojeg sam strahovala). Prezadovoljna sam i toplo preporucujem dr Draganu Ilic.',
 
     contact_tag: 'Kontakt',
     contact_title: 'Zakažite<br>svoju <em>konsultaciju</em>',
@@ -184,12 +181,9 @@ const translations = {
 
     test_tag: 'Testimonials',
     test_title: 'What our <em>clients say</em>',
-    t1_text: 'Dr. Dragana is incredible. I was nervous about my lips, but the result is so natural that everyone thinks I just "got some rest". I will definitely be back!',
-    t1_author: '- Ana M., Loznica',
-    t2_text: 'Professional, warm and precise. She explained every step and made sure I felt comfortable throughout the treatment. My skin has never been better.',
-    t2_author: '- Milica S., Belgrade',
-    t3_text: 'Pure Aesthetic clinic is a real hidden gem. The ambiance, service and results - everything is at the highest level. I recommend it to all my friends!',
-    t3_author: '- Jovana P., Valjevo',
+    t1_text: 'I am very satisfied with the work and approach of Dr. Dragana. Patient, gentle and very pleasant. It was worth driving a little further to reach her, because the final result is excellent: natural and beautiful lips.',
+    t2_text: 'I have been a long-time client of Dr. Dragana and I can sincerely say that I am very satisfied with the service and results. Professionalism, kindness and dedication to the patient. The practice is modern, pleasant and everything is done very carefully and without stress. Highly recommend Pure Aesthetic and Dr. Dragana Ilić.',
+    t3_text: 'I am someone who is very afraid of needles and always avoided anything involving injections, until I came to Dr. Dragana. She gave me confidence from the very first consultation, explained everything, and answered every question. I had botox in three areas and was very scared. However, Dr. Dragana has such a gentle touch that I barely felt anything. The results were excellent - everyone noticed I looked younger and fresher, but no one suspected I had botox, because it looked so natural. Highly recommend Dr. Dragana Ilic.',
 
     contact_tag: 'Contact',
     contact_title: 'Book<br>your <em>consultation</em>',

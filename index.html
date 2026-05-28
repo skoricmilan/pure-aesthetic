@@ -96,12 +96,15 @@
     </div>
 
     <div class="hero-right">
-      <img
-        src="images/hero/dragana-hero.jpg"
-        alt="Dr. Dragana Ilić – Pure Aesthetic Loznica"
-        class="hero-img"
-        onerror="this.parentElement.classList.add('no-image')"
-      >
+      <picture>
+        <source srcset="images/hero/dragana-hero.webp" type="image/webp">
+        <img
+          src="images/hero/dragana-hero.jpg"
+          alt="Dr. Dragana Ilić – Pure Aesthetic Loznica"
+          class="hero-img"
+          onerror="this.parentElement.parentElement.classList.add('no-image')"
+        >
+      </picture>
       <div class="hero-img-fallback">
         <span class="fallback-label">Fotografija</span>
         <span class="fallback-note">images/hero/dragana-hero.jpg</span>
@@ -133,12 +136,15 @@
   ══════════════════════════════ -->
   <section class="about section" id="o-meni">
     <div class="about-img-wrap">
-      <img
-        src="images/team/dragana-about.jpg"
-        alt="Dr. Dragana Ilić"
-        class="about-img"
-        onerror="this.parentElement.classList.add('no-image')"
-      >
+      <picture>
+        <source srcset="images/team/dragana-about.webp" type="image/webp">
+        <img
+          src="images/team/dragana-about.jpg"
+          alt="Dr. Dragana Ilić"
+          class="about-img"
+          onerror="this.parentElement.parentElement.classList.add('no-image')"
+        >
+      </picture>
       <div class="about-img-fallback">
         <span class="fallback-label">Fotografija</span>
         <span class="fallback-note">images/team/dragana-about.jpg</span>
@@ -563,22 +569,31 @@
     </div>
     <div class="clinic-grid">
       <div class="clinic-img fade-up">
-        <img src="images/clinic/klinika-1.jpg" alt="Pure Aesthetic klinika Loznica"
-          onerror="this.parentElement.classList.add('no-image')">
+        <picture>
+          <source srcset="images/clinic/klinika-1.webp" type="image/webp">
+          <img src="images/clinic/klinika-1.jpg" alt="Pure Aesthetic klinika Loznica"
+            onerror="this.parentElement.parentElement.classList.add('no-image')">
+        </picture>
         <div class="clinic-img-fallback">
           <span class="fallback-note">images/clinic/klinika-1.jpg</span>
         </div>
       </div>
       <div class="clinic-img fade-up">
-        <img src="images/clinic/klinika-2.jpg" alt="Pure Aesthetic klinika interior"
-          onerror="this.parentElement.classList.add('no-image')">
+        <picture>
+          <source srcset="images/clinic/klinika-2.webp" type="image/webp">
+          <img src="images/clinic/klinika-2.jpg" alt="Pure Aesthetic klinika interior"
+            onerror="this.parentElement.parentElement.classList.add('no-image')">
+        </picture>
         <div class="clinic-img-fallback">
           <span class="fallback-note">images/clinic/klinika-2.jpg</span>
         </div>
       </div>
       <div class="clinic-img fade-up">
-        <img src="images/clinic/klinika-3.jpg" alt="Pure Aesthetic tretman kabinet"
-          onerror="this.parentElement.classList.add('no-image')">
+        <picture>
+          <source srcset="images/clinic/klinika-3.webp" type="image/webp">
+          <img src="images/clinic/klinika-3.jpg" alt="Pure Aesthetic tretman kabinet"
+            onerror="this.parentElement.parentElement.classList.add('no-image')">
+        </picture>
         <div class="clinic-img-fallback">
           <span class="fallback-note">images/clinic/klinika-3.jpg</span>
         </div>
@@ -661,35 +676,37 @@
   <section class="testimonials section" id="utisci">
     <div class="test-header">
       <p class="section-tag fade-up" data-i18n="test_tag">Utisci</p>
-      <h2 class="section-title fade-up" data-i18n="test_title">Što kažu naše <em>klijentkinje</em></h2>
+      <h2 class="section-title fade-up" data-i18n="test_title">Šta kažu naše <em>klijentkinje</em></h2>
     </div>
     <div class="test-grid">
 
       <div class="test-card fade-up">
         <div class="test-mark">"</div>
         <p class="test-text" data-i18n="t1_text">
-          Dr. Dragana je nevjerojatna. Bila sam nervozna zbog usana, ali rezultat je toliko
-          prirodan da svi misle da sam se samo "odmorila". Definitivno se vraćam!
+          Prezadovoljna sam radom i pristupom dr Dragane. Strpljiva, njezna i jako prijatna.
+          Nije mi bilo tesko da predjem malo vise km da dodjem do nje, jer je krajnji rezultat odlican: prirodne i lijepe usne.
         </p>
-        <p class="test-author" data-i18n="t1_author">- Ana M., Loznica</p>
       </div>
 
       <div class="test-card fade-up">
         <div class="test-mark">"</div>
         <p class="test-text" data-i18n="t2_text">
-          Profesionalna, topla i precizna. Objasnila mi je svaki korak i osigurala da se
-          osjećam udobno tokom cijelog tretmana. Koža mi nikad nije bila bolja.
+          Dugogodišnji sam klijent dr Dragane i mogu iskreno da kažem da sam prezadovoljna uslugom i rezultatima.
+          Profesionalnost, ljubaznost i posvećenost pacijentu. Ordinacija je moderna, prijatna i sve se radi veoma
+          pažljivo i bez stresa. Svaka preporuka za Pure Aesthetic i dr Draganu Ilić.
         </p>
-        <p class="test-author" data-i18n="t2_author">- Milica S., Beograd</p>
       </div>
 
       <div class="test-card fade-up">
         <div class="test-mark">"</div>
         <p class="test-text" data-i18n="t3_text">
-          Pure Aesthetic klinika je pravo malo blago. Ambijent, usluga i rezultati -
-          sve je na najvišem nivou. Preporučujem svim prijateljicama!
+          Ja sam neko ko se mnogo plasi igala i uvijek sam izbjegavala sve sto ukljucuje injekcije,
+          dok nisam dosla kod dr Dragane. Vec na konsultacijama mi je ulila povjerenje, sve mi je objasnila,
+          na svako moje pitanje odgovorila. Radila sam botoks tri regije i mnogo sam se plasila. Medjutim,
+          dr Dragana ima tako laganu ruku, da nisam ni osjetila bockanje. A rezultati su bili odlicni.
+          Svi su primjetili da sam se podmladila, da izgledam svjezije ali niko nije ni pomislio da sam radila botoks,
+          jer je dr Dragana to tako dobro uradila da sve izgleda prirodno. Prezadovoljna sam i toplo preporucujem dr Draganu Ilic.
         </p>
-        <p class="test-author" data-i18n="t3_author">- Jovana P., Valjevo</p>
       </div>
 
     </div>
