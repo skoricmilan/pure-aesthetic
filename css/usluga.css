@@ -1,0 +1,135 @@
+/* ══════════════════════════════
+   SERVICE DETAIL PAGES
+══════════════════════════════ */
+
+.usluga-hero {
+  min-height: 38vh;
+  background: var(--cream-dark);
+  display: flex;
+  align-items: flex-end;
+  padding: calc(var(--nav-height) + 4rem) var(--section-pad-x) 4rem;
+}
+
+.usluga-hero-inner {
+  max-width: 800px;
+}
+
+.usluga-breadcrumb {
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--warm-gray);
+  margin-bottom: 1.5rem;
+}
+
+.usluga-breadcrumb a {
+  color: var(--warm-gray);
+  text-decoration: none;
+}
+
+.usluga-breadcrumb a:hover {
+  color: var(--burgundy);
+}
+
+.usluga-title {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 300;
+  color: var(--charcoal);
+  line-height: 1.1;
+  margin-bottom: 1rem;
+}
+
+.usluga-subtitle {
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  color: var(--warm-gray);
+  font-style: italic;
+  margin-bottom: 2rem;
+}
+
+.usluga-content {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 5rem var(--section-pad-x);
+}
+
+.usluga-section {
+  margin-bottom: 3.5rem;
+}
+
+.usluga-section h2 {
+  font-family: var(--font-serif);
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--charcoal);
+  margin-bottom: 1.2rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid var(--cream-mid);
+}
+
+.usluga-section p {
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  line-height: 1.85;
+  color: var(--charcoal-soft);
+  margin-bottom: 1rem;
+}
+
+.usluga-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.usluga-list li {
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--charcoal-soft);
+  padding: 0.4rem 0 0.4rem 1.4rem;
+  position: relative;
+}
+
+.usluga-list li::before {
+  content: '–';
+  position: absolute;
+  left: 0;
+  color: var(--burgundy);
+}
+
+.usluga-section strong {
+  font-weight: 600;
+  color: var(--charcoal);
+}
+
+.usluga-cta-bottom {
+  background: var(--burgundy);
+  color: var(--white);
+  text-align: center;
+  padding: 5rem var(--section-pad-x);
+}
+
+.usluga-cta-bottom h2 {
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+.usluga-cta-bottom p {
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  opacity: 0.85;
+  margin-bottom: 2rem;
+}
+
+.usluga-cta-bottom .btn-primary {
+  background: var(--white);
+  color: var(--burgundy);
+}
+
+.usluga-cta-bottom .btn-primary:hover {
+  background: var(--cream);
+}
