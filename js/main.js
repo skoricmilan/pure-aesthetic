@@ -66,6 +66,7 @@ const translations = {
     r1_label: 'Hijaluronski Fileri - Usne',
     r2_label: 'Fileri - Jagodice &amp; Volumizacija',
     r3_label: 'Biorevitalizacija - Glass Skin',
+    results_ig_cta: 'Više rezultata i radova pogledajte na našem Instagram profilu',
 
     test_tag: 'Utisci',
     test_title: 'Šta kažu naše <em>klijentkinje</em>',
@@ -178,6 +179,7 @@ const translations = {
     r1_label: 'Hyaluronic Fillers - Lips',
     r2_label: 'Fillers - Cheeks &amp; Volumization',
     r3_label: 'Biorevitalization - Glass Skin',
+    results_ig_cta: 'See more results and work on our Instagram profile',
 
     test_tag: 'Testimonials',
     test_title: 'What our <em>clients say</em>',

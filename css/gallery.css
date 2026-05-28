@@ -98,3 +98,25 @@
   letter-spacing: 0.18em;
   text-transform: uppercase;
 }
+
+.results-cta {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.results-ig-link {
+  display: inline-block;
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  color: var(--burgundy);
+  text-decoration: none;
+  border-bottom: 1px solid var(--burgundy);
+  padding-bottom: 2px;
+  transition: opacity var(--transition);
+}
+
+.results-ig-link:hover {
+  opacity: 0.7;
+}
