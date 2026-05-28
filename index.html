@@ -96,12 +96,15 @@
     </div>
 
     <div class="hero-right">
-      <img
-        src="images/hero/dragana-hero.jpg"
-        alt="Dr. Dragana Ilić – Pure Aesthetic Loznica"
-        class="hero-img"
-        onerror="this.parentElement.classList.add('no-image')"
-      >
+      <picture>
+        <source srcset="images/hero/dragana-hero.webp" type="image/webp">
+        <img
+          src="images/hero/dragana-hero.jpg"
+          alt="Dr. Dragana Ilić – Pure Aesthetic Loznica"
+          class="hero-img"
+          onerror="this.parentElement.parentElement.classList.add('no-image')"
+        >
+      </picture>
       <div class="hero-img-fallback">
         <span class="fallback-label">Fotografija</span>
         <span class="fallback-note">images/hero/dragana-hero.jpg</span>
@@ -133,12 +136,15 @@
   ══════════════════════════════ -->
   <section class="about section" id="o-meni">
     <div class="about-img-wrap">
-      <img
-        src="images/team/dragana-about.jpg"
-        alt="Dr. Dragana Ilić"
-        class="about-img"
-        onerror="this.parentElement.classList.add('no-image')"
-      >
+      <picture>
+        <source srcset="images/team/dragana-about.webp" type="image/webp">
+        <img
+          src="images/team/dragana-about.jpg"
+          alt="Dr. Dragana Ilić"
+          class="about-img"
+          onerror="this.parentElement.parentElement.classList.add('no-image')"
+        >
+      </picture>
       <div class="about-img-fallback">
         <span class="fallback-label">Fotografija</span>
         <span class="fallback-note">images/team/dragana-about.jpg</span>
@@ -563,22 +569,31 @@
     </div>
     <div class="clinic-grid">
       <div class="clinic-img fade-up">
-        <img src="images/clinic/klinika-1.jpg" alt="Pure Aesthetic klinika Loznica"
-          onerror="this.parentElement.classList.add('no-image')">
+        <picture>
+          <source srcset="images/clinic/klinika-1.webp" type="image/webp">
+          <img src="images/clinic/klinika-1.jpg" alt="Pure Aesthetic klinika Loznica"
+            onerror="this.parentElement.parentElement.classList.add('no-image')">
+        </picture>
         <div class="clinic-img-fallback">
           <span class="fallback-note">images/clinic/klinika-1.jpg</span>
         </div>
       </div>
       <div class="clinic-img fade-up">
-        <img src="images/clinic/klinika-2.jpg" alt="Pure Aesthetic klinika interior"
-          onerror="this.parentElement.classList.add('no-image')">
+        <picture>
+          <source srcset="images/clinic/klinika-2.webp" type="image/webp">
+          <img src="images/clinic/klinika-2.jpg" alt="Pure Aesthetic klinika interior"
+            onerror="this.parentElement.parentElement.classList.add('no-image')">
+        </picture>
         <div class="clinic-img-fallback">
           <span class="fallback-note">images/clinic/klinika-2.jpg</span>
         </div>
       </div>
       <div class="clinic-img fade-up">
-        <img src="images/clinic/klinika-3.jpg" alt="Pure Aesthetic tretman kabinet"
-          onerror="this.parentElement.classList.add('no-image')">
+        <picture>
+          <source srcset="images/clinic/klinika-3.webp" type="image/webp">
+          <img src="images/clinic/klinika-3.jpg" alt="Pure Aesthetic tretman kabinet"
+            onerror="this.parentElement.parentElement.classList.add('no-image')">
+        </picture>
         <div class="clinic-img-fallback">
           <span class="fallback-note">images/clinic/klinika-3.jpg</span>
         </div>
