@@ -1,5 +1,5 @@
 /* ══════════════════════════════
-   PURE AESTHETIC — main.js
+   PURE AESTHETIC - main.js
 ══════════════════════════════ */
 
 // ── Translations ────────────────────────────
@@ -11,12 +11,12 @@ const translations = {
     nav_results: 'Rezultati',
     nav_testimonials: 'Utisci',
     nav_contact: 'Kontakt',
-    nav_cta: 'Zakazi Termin',
+    nav_cta: 'Zakaži',
 
     hero_tag: 'Estetska Medicina · Loznica',
     hero_title: 'Nova era<br><em>lepote</em><br>je stigla.',
-    hero_desc: 'Personalizovani tretmani za prirodne rezultate koji odražavaju vašu pravu lepotu. Hijaluronski fileri, Botox, biorevitalizacija i najsavremeniji estetski zahvati u sigurnom i luksuznom okruženju.',
-    hero_btn_primary: 'Zakazi Konsultaciju',
+    hero_desc: 'Personalizovani tretmani estetske medicine za prirodne i skladne rezultate koji ističu vašu autentičnu lepotu. Hijaluronski fileri, Botox, biorevitalizacija, skin boosteri i savremeni regenerativni tretmani u sigurnom, profesionalnom i luksuznom okruženju.',
+    hero_btn_primary: 'Zakaži konsultaciju',
     hero_btn_outline: 'Naši Tretmani',
 
     strip_consultation: 'Skincare Konsultacija',
@@ -35,7 +35,7 @@ const translations = {
     services_desc: 'Svaki tretman je personalizovan prema vašim potrebama i željama.',
 
     s1_title: 'Hijaluronski Fileri',
-    s1_desc: 'Povećanje i oblikovanje usana, korekcija nosa, volumizacija jagodica i popunjavanje bora — prirodni rezultati koji traju 9–18 mjeseci.',
+    s1_desc: 'Povećanje i oblikovanje usana, korekcija nosa, volumizacija jagodica i popunjavanje bora - prirodni rezultati koji traju 9–18 mjeseci.',
     s2_title: 'Botox',
     s2_desc: 'Relaksacija mimičnih mišića za glatko čelo i pomlađen izgled. Precizan i bezbolan zahvat s vidljivim efektom već za nekoliko dana.',
     s3_title: 'Jalupro &amp; Profhilo',
@@ -43,32 +43,32 @@ const translations = {
     s4_title: 'Mezoterapija',
     s4_desc: 'Kokteli vitamina i aktivnih supstanci direktno u kožu za intenzivnu njegu, hidrataciju i osvežavanje tena tokom cele godine.',
     s5_title: 'Glass Skin',
-    s5_desc: 'Kombinacija tretmana za postizanje prozirne, blistave kože — duboka hidratacija, ujednačen ten i zdravi sjaj koji govori sam za sebe.',
+    s5_desc: 'Kombinacija tretmana za postizanje prozirne, blistave kože - duboka hidratacija, ujednačen ten i zdravi sjaj koji govori sam za sebe.',
     s6_title: 'Konsultacija',
     s6_desc: 'Svaka poseta počinje detaljnom analizom kože i željenih ciljeva. Zajedno određujemo koji tretman je prava opcija za vaše lice.',
     s_link: 'Zakazi →',
     s_prices: 'Cene →',
 
     clinic_tag: 'Naša Klinika',
-    clinic_title: 'Pure Aesthetic — <em>nova era lepote</em>',
+    clinic_title: 'Pure Aesthetic - <em>nova era lepote</em>',
 
     results_tag: 'Rezultati',
     results_title: 'Pre &amp; <em>Posle</em>',
     results_desc: 'Prirodni rezultati koji govore sami za sebe.',
     badge_before: 'Pre',
     badge_after: 'Posle',
-    r1_label: 'Hijaluronski Fileri — Usne',
-    r2_label: 'Fileri — Jagodice &amp; Volumizacija',
-    r3_label: 'Biorevitalizacija — Glass Skin',
+    r1_label: 'Hijaluronski Fileri - Usne',
+    r2_label: 'Fileri - Jagodice &amp; Volumizacija',
+    r3_label: 'Biorevitalizacija - Glass Skin',
 
     test_tag: 'Utisci',
     test_title: 'Što kažu naše <em>klijentkinje</em>',
     t1_text: 'Dr. Dragana je neverovatna. Bila sam nervozna zbog usana, ali rezultat je toliko prirodan da svi misle da sam se samo "odmorila". Definitivno se vraćam!',
-    t1_author: '— Ana M., Loznica',
+    t1_author: '- Ana M., Loznica',
     t2_text: 'Profesionalna, topla i precizna. Objasnila mi je svaki korak i osigurala da se osećam udobno tokom celog tretmana. Koža mi nikad nije bila bolja.',
-    t2_author: '— Milica S., Beograd',
-    t3_text: 'Pure Aesthetic klinika je pravo malo blago. Ambijent, usluga i rezultati — sve je na najvišem nivou. Preporučujem svim prijateljicama!',
-    t3_author: '— Jovana P., Valjevo',
+    t2_author: '- Milica S., Beograd',
+    t3_text: 'Pure Aesthetic klinika je pravo malo blago. Ambijent, usluga i rezultati - sve je na najvišem nivou. Preporučujem svim prijateljicama!',
+    t3_author: '- Jovana P., Valjevo',
 
     contact_tag: 'Kontakt',
     contact_title: 'Zakažite<br>svoju <em>konsultaciju</em>',
@@ -124,7 +124,7 @@ const translations = {
 
     hero_tag: 'Aesthetic Medicine · Loznica',
     hero_title: 'A new era<br><em>of beauty</em><br>has arrived.',
-    hero_desc: 'Personalized treatments for natural results that reflect your true beauty. Hyaluronic fillers, Botox, biorevitalization and the most advanced aesthetic procedures in a safe and luxurious environment.',
+    hero_desc: 'Personalized aesthetic medicine treatments for natural and harmonious results that highlight your authentic beauty. Hyaluronic fillers, Botox, biorevitalization, skin boosters and advanced regenerative treatments in a safe, professional and luxurious environment.',
     hero_btn_primary: 'Book Consultation',
     hero_btn_outline: 'Our Treatments',
 
@@ -146,7 +146,7 @@ const translations = {
     services_desc: 'Every treatment is personalized to your needs and wishes.',
 
     s1_title: 'Hyaluronic Fillers',
-    s1_desc: 'Lip augmentation and shaping, nose correction, cheek volumization and wrinkle filling — natural results lasting 9–18 months.',
+    s1_desc: 'Lip augmentation and shaping, nose correction, cheek volumization and wrinkle filling - natural results lasting 9–18 months.',
     s2_title: 'Botox',
     s2_desc: 'Relaxation of facial muscles for a smooth forehead and rejuvenated appearance. Precise and painless procedure with visible effect within days.',
     s3_title: 'Jalupro &amp; Profhilo',
@@ -154,32 +154,32 @@ const translations = {
     s4_title: 'Mesotherapy',
     s4_desc: 'Cocktails of vitamins and active substances directly into the skin for intensive care, hydration and complexion refreshment throughout the year.',
     s5_title: 'Glass Skin',
-    s5_desc: 'A combination of treatments for achieving translucent, radiant skin — deep hydration, even complexion and healthy glow that speaks for itself.',
+    s5_desc: 'A combination of treatments for achieving translucent, radiant skin - deep hydration, even complexion and healthy glow that speaks for itself.',
     s6_title: 'Consultation',
     s6_desc: 'Every visit begins with a detailed skin analysis and goal setting. Together we determine which treatment is the right option for your face.',
     s_link: 'Book →',
     s_prices: 'Prices →',
 
     clinic_tag: 'Our Clinic',
-    clinic_title: 'Pure Aesthetic — <em>a new era of beauty</em>',
+    clinic_title: 'Pure Aesthetic - <em>a new era of beauty</em>',
 
     results_tag: 'Results',
     results_title: 'Before &amp; <em>After</em>',
     results_desc: 'Natural results that speak for themselves.',
     badge_before: 'Before',
     badge_after: 'After',
-    r1_label: 'Hyaluronic Fillers — Lips',
-    r2_label: 'Fillers — Cheeks &amp; Volumization',
-    r3_label: 'Biorevitalization — Glass Skin',
+    r1_label: 'Hyaluronic Fillers - Lips',
+    r2_label: 'Fillers - Cheeks &amp; Volumization',
+    r3_label: 'Biorevitalization - Glass Skin',
 
     test_tag: 'Testimonials',
     test_title: 'What our <em>clients say</em>',
     t1_text: 'Dr. Dragana is incredible. I was nervous about my lips, but the result is so natural that everyone thinks I just "got some rest". I will definitely be back!',
-    t1_author: '— Ana M., Loznica',
+    t1_author: '- Ana M., Loznica',
     t2_text: 'Professional, warm and precise. She explained every step and made sure I felt comfortable throughout the treatment. My skin has never been better.',
-    t2_author: '— Milica S., Belgrade',
-    t3_text: 'Pure Aesthetic clinic is a real hidden gem. The ambiance, service and results — everything is at the highest level. I recommend it to all my friends!',
-    t3_author: '— Jovana P., Valjevo',
+    t2_author: '- Milica S., Belgrade',
+    t3_text: 'Pure Aesthetic clinic is a real hidden gem. The ambiance, service and results - everything is at the highest level. I recommend it to all my friends!',
+    t3_author: '- Jovana P., Valjevo',
 
     contact_tag: 'Contact',
     contact_title: 'Book<br>your <em>consultation</em>',
