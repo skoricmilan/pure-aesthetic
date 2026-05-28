@@ -11,12 +11,12 @@ const translations = {
     nav_results: 'Rezultati',
     nav_testimonials: 'Utisci',
     nav_contact: 'Kontakt',
-    nav_cta: 'Zakazi Termin',
+    nav_cta: 'Zakaži',
 
     hero_tag: 'Estetska Medicina · Loznica',
     hero_title: 'Nova era<br><em>lepote</em><br>je stigla.',
-    hero_desc: 'Personalizovani tretmani za prirodne rezultate koji odražavaju vašu pravu lepotu. Hijaluronski fileri, Botox, biorevitalizacija i najsavremeniji estetski zahvati u sigurnom i luksuznom okruženju.',
-    hero_btn_primary: 'Zakazi Konsultaciju',
+    hero_desc: 'Personalizovani tretmani estetske medicine za prirodne i skladne rezultate koji ističu vašu autentičnu lepotu. Hijaluronski fileri, Botox, biorevitalizacija, skin boosteri i savremeni regenerativni tretmani u sigurnom, profesionalnom i luksuznom okruženju.',
+    hero_btn_primary: 'Zakaži konsultaciju',
     hero_btn_outline: 'Naši Tretmani',
 
     strip_consultation: 'Skincare Konsultacija',
@@ -124,7 +124,7 @@ const translations = {
 
     hero_tag: 'Aesthetic Medicine · Loznica',
     hero_title: 'A new era<br><em>of beauty</em><br>has arrived.',
-    hero_desc: 'Personalized treatments for natural results that reflect your true beauty. Hyaluronic fillers, Botox, biorevitalization and the most advanced aesthetic procedures in a safe and luxurious environment.',
+    hero_desc: 'Personalized aesthetic medicine treatments for natural and harmonious results that highlight your authentic beauty. Hyaluronic fillers, Botox, biorevitalization, skin boosters and advanced regenerative treatments in a safe, professional and luxurious environment.',
     hero_btn_primary: 'Book Consultation',
     hero_btn_outline: 'Our Treatments',
 
