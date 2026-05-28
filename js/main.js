@@ -135,11 +135,9 @@ const translations = {
     about_text1: 'Welcome to Pure Aesthetic. I am Dr Dragana Ilić, doctor of aesthetic medicine and founder of Pure Aesthetic clinic in Loznica. My philosophy is that beauty should not change a person - it should highlight what is already beautiful.',
     about_text2: 'In every treatment I nurture an individual, attentive and expert approach, because every face has its own anatomy, character and story. The goal is a natural, fresh and refined look, with results that radiate elegance and confidence. I use exclusively certified, high-quality products from trusted manufacturers, with full commitment to safety, aesthetics and long-term patient satisfaction.',
     about_quote: '"The goal of aesthetics is not to change your face, but to awaken the feeling that you radiate in your own skin."',
-    cred3: 'Certified physician for Jalupro and Profhilo',
     cred1: 'Doctor of dental and aesthetic medicine',
-    cred2: 'Specialization: fillers, Botox, regenerative treatments',
-    cred4: 'Certified and registered ECAMS doctor (European College of Aesthetic Medicine & Surgery)',
-    cred5: 'Owner of Pure Aesthetic clinic, Loznica',
+    cred2: 'Certified and registered ECAMS physician (European College of Aesthetic Medicine & Surgery)',
+    cred3: 'Certified physician for Jalupro and Profhilo',
 
     services_tag: 'Treatments',
     services_title: 'What We Offer',
