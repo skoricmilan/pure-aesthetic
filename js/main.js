@@ -23,8 +23,8 @@ const translations = {
 
     about_tag: 'O Meni',
     about_title: 'Doktor estetske<br><em>medicine</em>',
-    about_text1: 'Zdravo! Ja sam Dr. Dragana Ilić, doktor estetske medicine i osnivačica Pure Aesthetic klinike u Loznici. Moja misija je da svakoj osobi pomognem da postigne prirodan, blistav izgled koji odražava njenu unutrašnju snagu i samopouzdanje.',
-    about_text2: 'Svaki tretman pristupam individualno — jer svako lice ima svoju priču, i svaka intervencija treba biti prilagođena upravo vama. Koristim isključivo visokokvalitetne, sertifikovane preparate proverenih proizvođača.',
+    about_text1: 'Dobro došli u Pure Aesthetic. Ja sam dr Dragana Ilić, doktor estetske medicine i osnivačica Pure Aesthetic klinike u Loznici. Moja filozofija je da lepota ne treba da menja osobu, već da istakne ono najlepše što već postoji.',
+    about_text2: 'U svakom tretmanu negujem individualan, pažljiv i stručan pristup, jer svako lice ima svoju anatomiju, karakter i priču. Cilj je prirodan, svež i negovan izgled, uz rezultat koji odiše merom, elegancijom i samopouzdanjem. U radu koristim isključivo sertifikovane preparate visokog kvaliteta, proverenih proizvođača, uz maksimalnu posvećenost bezbednosti, estetici i dugoročnom zadovoljstvu pacijenata.',
     about_quote: '"Lepota nije u savršenstvu — ona je u tome da se osećaš kao svoja najbolja verzija."',
     cred1: 'Doktor stomatologije i estetske medicine',
     cred2: 'Specijalizacija: fileri, Botox, regenerativni tretmani',
@@ -134,8 +134,8 @@ const translations = {
 
     about_tag: 'About Me',
     about_title: 'Doctor of aesthetic<br><em>medicine</em>',
-    about_text1: 'Hello! I am Dr. Dragana Ilić, doctor of aesthetic medicine and founder of Pure Aesthetic clinic in Loznica. My mission is to help each person achieve a natural, radiant look that reflects their inner strength and confidence.',
-    about_text2: 'I approach every treatment individually — because every face has its own story, and every procedure should be tailored specifically to you. I use exclusively high-quality, certified products from trusted manufacturers.',
+    about_text1: 'Welcome to Pure Aesthetic. I am Dr. Dragana Ilić, doctor of aesthetic medicine and founder of Pure Aesthetic clinic in Loznica. My philosophy is that beauty should not change a person — it should highlight what is already beautiful.',
+    about_text2: 'In every treatment I nurture an individual, attentive and expert approach, because every face has its own anatomy, character and story. The goal is a natural, fresh and refined look, with results that radiate elegance and confidence. I use exclusively certified, high-quality products from trusted manufacturers, with full commitment to safety, aesthetics and long-term patient satisfaction.',
     about_quote: '"Beauty is not in perfection — it is in feeling like your best self."',
     cred1: 'Doctor of dental and aesthetic medicine',
     cred2: 'Specialization: fillers, Botox, regenerative treatments',
