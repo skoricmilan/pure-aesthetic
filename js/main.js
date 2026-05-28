@@ -15,7 +15,7 @@ const translations = {
 
     hero_tag: 'Estetska Medicina · Loznica',
     hero_title: 'Nova era<br><em>lepote</em><br>je stigla.',
-    hero_desc: 'Personalizovani tretmani za prirodne rezultate koji odražavaju vašu pravu lepotu. Hijaluronski fileri, Botox, Jalupro i najsavremeniji estetski zahvati u sigurnom i luksuznom okruženju.',
+    hero_desc: 'Personalizovani tretmani za prirodne rezultate koji odražavaju vašu pravu lepotu. Hijaluronski fileri, Botox, biorevitalizacija i najsavremeniji estetski zahvati u sigurnom i luksuznom okruženju.',
     hero_btn_primary: 'Zakazi Konsultaciju',
     hero_btn_outline: 'Naši Tretmani',
 
@@ -76,6 +76,7 @@ const translations = {
     addr_label: 'Adresa',
     hours_label: 'Radno Vrijeme',
     hours_val: 'Pon – Pet: 09:00 – 18:00<br>Subota: po dogovoru',
+    phone_label: 'Telefon',
 
     form_name: 'Ime',
     form_surname: 'Prezime',
@@ -123,7 +124,7 @@ const translations = {
 
     hero_tag: 'Aesthetic Medicine · Loznica',
     hero_title: 'A new era<br><em>of beauty</em><br>has arrived.',
-    hero_desc: 'Personalized treatments for natural results that reflect your true beauty. Hyaluronic fillers, Botox, Jalupro and the most advanced aesthetic procedures in a safe and luxurious environment.',
+    hero_desc: 'Personalized treatments for natural results that reflect your true beauty. Hyaluronic fillers, Botox, biorevitalization and the most advanced aesthetic procedures in a safe and luxurious environment.',
     hero_btn_primary: 'Book Consultation',
     hero_btn_outline: 'Our Treatments',
 
@@ -134,9 +135,11 @@ const translations = {
     about_text1: 'Welcome to Pure Aesthetic. I am Dr Dragana Ilić, doctor of aesthetic medicine and founder of Pure Aesthetic clinic in Loznica. My philosophy is that beauty should not change a person - it should highlight what is already beautiful.',
     about_text2: 'In every treatment I nurture an individual, attentive and expert approach, because every face has its own anatomy, character and story. The goal is a natural, fresh and refined look, with results that radiate elegance and confidence. I use exclusively certified, high-quality products from trusted manufacturers, with full commitment to safety, aesthetics and long-term patient satisfaction.',
     about_quote: '"The goal of aesthetics is not to change your face, but to awaken the feeling that you radiate in your own skin."',
-    cred1: 'Doctor of dentistry and aesthetic medicine',
-    cred2: 'Certified and registered ECAMS physician (European College of Aesthetic Medicine & Surgery)',
     cred3: 'Certified physician for Jalupro and Profhilo',
+    cred1: 'Doctor of dental and aesthetic medicine',
+    cred2: 'Specialization: fillers, Botox, regenerative treatments',
+    cred4: 'Certified and registered ECAMS doctor (European College of Aesthetic Medicine & Surgery)',
+    cred5: 'Owner of Pure Aesthetic clinic, Loznica',
 
     services_tag: 'Treatments',
     services_title: 'What We Offer',
@@ -184,6 +187,7 @@ const translations = {
     addr_label: 'Address',
     hours_label: 'Working Hours',
     hours_val: 'Mon – Fri: 09:00 – 18:00<br>Saturday: by arrangement',
+    phone_label: 'Phone',
 
     form_name: 'Name',
     form_surname: 'Surname',

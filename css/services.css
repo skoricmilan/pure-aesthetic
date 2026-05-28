@@ -18,7 +18,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.5px;
-  background: rgba(107, 26, 42, 0.10);
+  background: rgba(107, 11, 30, 0.10);
 }
 
 .service-card {
@@ -59,12 +59,16 @@
 }
 
 .service-title {
-  font-family: var(--font-serif);
+  font-family: var(--font-display);
   font-size: 1.5rem;
   font-weight: 400;
   color: var(--charcoal);
   margin-bottom: 0.8rem;
   transition: color var(--transition);
+}
+
+.services-header .section-title {
+  font-weight: 400;
 }
 
 .service-desc {

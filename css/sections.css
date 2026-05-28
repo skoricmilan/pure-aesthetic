@@ -30,9 +30,10 @@
   color: var(--white);
   padding: 1.5rem 2rem;
   max-width: 280px;
-  font-family: var(--font-serif);
+  font-family: var(--font-display);
+  font-weight: 400;
   font-size: 1.05rem;
-  font-style: italic;
+  font-style: normal;
   line-height: 1.6;
   z-index: 2;
 }
@@ -58,7 +59,7 @@
   gap: 0.75rem;
   margin-top: 2.2rem;
   padding-top: 2.2rem;
-  border-top: 1px solid rgba(107, 26, 42, 0.14);
+  border-top: 1px solid rgba(107, 11, 30, 0.14);
 }
 
 .cred-item {
@@ -132,6 +133,10 @@
   color: var(--white);
 }
 
+.test-header .section-title em {
+  color: var(--gold);
+}
+
 .test-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -158,8 +163,9 @@
 }
 
 .test-text {
-  font-family: var(--font-serif);
-  font-style: italic;
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-style: normal;
   font-size: 1.05rem;
   line-height: 1.75;
   color: rgba(255,255,255,0.82);
