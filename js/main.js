@@ -23,7 +23,7 @@ const translations = {
 
     about_tag: 'O Meni',
     about_title: 'Doktor estetske<br><em>medicine</em>',
-    about_text1: 'Dobro došli u Pure Aesthetic. Ja sam dr Dragana Ilić, doktor stomatologije i estetske medicine i osnivačica Pure Aesthetic klinike u Loznici. Moja filozofija je da lepota ne treba da menja osobu, već da istakne ono najlepše što već postoji.',
+    about_text1: 'Dobro došli u Pure Aesthetic.<br>Ja sam dr Dragana Ilić, doktor stomatologije i estetske medicine i osnivačica Pure Aesthetic klinike u Loznici. Moja filozofija je da lepota ne treba da menja osobu, već da istakne ono najlepše što već postoji.',
     about_text2: 'U svakom tretmanu negujem individualan, pažljiv i stručan pristup, jer svako lice ima svoju anatomiju, karakter i priču. Cilj je prirodan, svež i negovan izgled, uz rezultat koji odiše merom, elegancijom i samopouzdanjem. U radu koristim isključivo sertifikovane preparate visokog kvaliteta, proverenih proizvođača, uz maksimalnu posvećenost bezbednosti, estetici i dugoročnom zadovoljstvu pacijenata.',
     about_quote: '„Cilj estetike nije da promeni vaše lice, već da probudi osećaj da blistate u svojoj koži."',
     cred1: 'Doktor stomatologije i estetske medicine',
