@@ -188,7 +188,8 @@
   }
 
   .footer-logo img {
-    height: 112px;
+    height: auto;
+    max-width: 160px;
   }
 
   .footer-links {
