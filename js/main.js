@@ -23,7 +23,7 @@ const translations = {
 
     about_tag: 'O Meni',
     about_title: 'Doktor estetske<br><em>medicine</em>',
-    about_text1: 'Dobro došli u Pure Aesthetic. Ja sam dr Dragana Ilić, doktor estetske medicine i osnivačica Pure Aesthetic klinike u Loznici. Moja filozofija je da lepota ne treba da menja osobu, već da istakne ono najlepše što već postoji.',
+    about_text1: 'Dobro došli u Pure Aesthetic.<br>Ja sam dr Dragana Ilić, doktor stomatologije i estetske medicine i osnivačica Pure Aesthetic klinike u Loznici. Moja filozofija je da lepota ne treba da menja osobu, već da istakne ono najlepše što već postoji.',
     about_text2: 'U svakom tretmanu negujem individualan, pažljiv i stručan pristup, jer svako lice ima svoju anatomiju, karakter i priču. Cilj je prirodan, svež i negovan izgled, uz rezultat koji odiše merom, elegancijom i samopouzdanjem. U radu koristim isključivo sertifikovane preparate visokog kvaliteta, proverenih proizvođača, uz maksimalnu posvećenost bezbednosti, estetici i dugoročnom zadovoljstvu pacijenata.',
     about_quote: '„Cilj estetike nije da promeni vaše lice, već da probudi osećaj da blistate u svojoj koži."',
     cred1: 'Doktor stomatologije i estetske medicine',
@@ -64,7 +64,7 @@ const translations = {
     badge_before: 'Pre',
     badge_after: 'Posle',
     r1_label: 'Hijaluronski Fileri - Usne',
-    r2_label: 'Fileri - Jagodice &amp; Volumizacija',
+    r2_label: 'Fileri - Full face',
     r3_label: 'Biorevitalizacija - Glass Skin',
     results_ig_cta: 'Više rezultata i radova pogledajte na našem <strong>Instagram</strong> profilu',
 
@@ -136,7 +136,7 @@ const translations = {
 
     about_tag: 'About Me',
     about_title: 'Doctor of aesthetic<br><em>medicine</em>',
-    about_text1: 'Welcome to Pure Aesthetic. I am Dr Dragana Ilić, doctor of aesthetic medicine and founder of Pure Aesthetic clinic in Loznica. My philosophy is that beauty should not change a person - it should highlight what is already beautiful.',
+    about_text1: 'Welcome to Pure Aesthetic. I am Dr Dragana Ilić, doctor of dentistry and aesthetic medicine and founder of Pure Aesthetic clinic in Loznica. My philosophy is that beauty should not change a person - it should highlight what is already beautiful.',
     about_text2: 'In every treatment I nurture an individual, attentive and expert approach, because every face has its own anatomy, character and story. The goal is a natural, fresh and refined look, with results that radiate elegance and confidence. I use exclusively certified, high-quality products from trusted manufacturers, with full commitment to safety, aesthetics and long-term patient satisfaction.',
     about_quote: '"The goal of aesthetics is not to change your face, but to awaken the feeling that you radiate in your own skin."',
     cred1: 'Doctor of dental and aesthetic medicine',
@@ -177,7 +177,7 @@ const translations = {
     badge_before: 'Before',
     badge_after: 'After',
     r1_label: 'Hyaluronic Fillers - Lips',
-    r2_label: 'Fillers - Cheeks &amp; Volumization',
+    r2_label: 'Fillers - Full face',
     r3_label: 'Biorevitalization - Glass Skin',
     results_ig_cta: 'See more results and work on our <strong>Instagram</strong> profile',
 
