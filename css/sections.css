@@ -179,3 +179,15 @@
   text-transform: uppercase;
   color: var(--gold);
 }
+
+.testimonials .results-cta .results-ig-link {
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.testimonials .results-cta .results-ig-link strong {
+  color: var(--gold);
+}
+
+.testimonials .results-cta .results-ig-link::after {
+  color: var(--gold);
+}
