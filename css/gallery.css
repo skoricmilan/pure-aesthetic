@@ -16,8 +16,20 @@
 
 .results-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   gap: 2rem;
+}
+
+.result-item {
+  grid-column: span 2;
+}
+
+.results-grid .result-item:nth-child(4) {
+  grid-column: 2 / 4;
+}
+
+.results-grid .result-item:nth-child(5) {
+  grid-column: 4 / 6;
 }
 
 .result-item {
