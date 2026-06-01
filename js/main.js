@@ -64,8 +64,8 @@ const translations = {
     badge_before: 'Pre',
     badge_after: 'Posle',
     r1_label: 'Hijaluronski Fileri - Usne',
-    r2_label: 'Fileri - Full face',
-    r3_label: 'Biorevitalizacija - Glass Skin',
+    r2_label: 'Botoks - Čelo',
+    r3_label: 'Fileri - Full face',
     results_ig_cta: 'Više rezultata i radova pogledajte na našem <strong>Instagram</strong> profilu',
 
     test_tag: 'Utisci',
@@ -178,8 +178,8 @@ const translations = {
     badge_before: 'Before',
     badge_after: 'After',
     r1_label: 'Hyaluronic Fillers - Lips',
-    r2_label: 'Fillers - Full face',
-    r3_label: 'Biorevitalization - Glass Skin',
+    r2_label: 'Botox - Forehead',
+    r3_label: 'Fillers - Full face',
     results_ig_cta: 'See more results and work on our <strong>Instagram</strong> profile',
 
     test_tag: 'Testimonials',
