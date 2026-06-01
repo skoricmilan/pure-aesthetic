@@ -68,6 +68,7 @@ const translations = {
     r3_label: 'Fileri - Full face',
     r4_label: 'Brotox',
     r5_label: 'Fileri - Full face',
+    r6_label: 'Hijaluronski Fileri - Usne',
     results_ig_cta: 'Više rezultata i radova pogledajte na našem <strong>Instagram</strong> profilu',
 
     test_tag: 'Utisci',
@@ -184,6 +185,7 @@ const translations = {
     r3_label: 'Fillers - Full face',
     r4_label: 'Brotox',
     r5_label: 'Fillers - Full face',
+    r6_label: 'Hyaluronic Fillers - Lips',
     results_ig_cta: 'See more results and work on our <strong>Instagram</strong> profile',
 
     test_tag: 'Testimonials',
@@ -414,14 +416,23 @@ document.addEventListener('DOMContentLoaded', () => {
     const nextBtn = document.querySelector('.slider-next');
     const dotsWrap = document.querySelector('.slider-dots');
 
-    let current = 0;
+    for (let i = items.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [items[i], items[j]] = [items[j], items[i]];
+    }
+    items.forEach(el => track.appendChild(el));
+
     const GAP = 32;
+    const total = items.length;
+    let current = 0;
+
+    // Clone items for infinite loop: [...originals, ...clones]
+    items.forEach(el => track.appendChild(el.cloneNode(true)));
+    const allItems = Array.from(track.querySelectorAll('.result-item'));
 
     function perView() {
       return window.innerWidth >= 1024 ? 3 : window.innerWidth >= 640 ? 2 : 1;
     }
-
-    function maxIdx() { return Math.max(0, items.length - perView()); }
 
     function itemW() {
       const pv = perView();
@@ -430,46 +441,97 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function buildDots() {
       dotsWrap.innerHTML = '';
-      for (let i = 0; i <= maxIdx(); i++) {
+      for (let i = 0; i < total; i++) {
         const btn = document.createElement('button');
         btn.className = 'slider-dot' + (i === current ? ' active' : '');
         btn.setAttribute('aria-label', 'Slajd ' + (i + 1));
-        btn.addEventListener('click', () => goTo(i));
+        btn.addEventListener('click', () => { resetAuto(); jumpTo(i); });
         dotsWrap.appendChild(btn);
       }
     }
 
-    function goTo(n) {
-      current = Math.max(0, Math.min(n, maxIdx()));
+    function setTranslate(idx, animated) {
       const w = itemW();
-      track.style.transform = 'translateX(-' + (current * (w + GAP)) + 'px)';
+      track.style.transition = animated ? 'transform 0.5s ease' : 'none';
+      track.style.transform = 'translateX(-' + (idx * (w + GAP)) + 'px)';
+    }
+
+    function updateDots() {
       dotsWrap.querySelectorAll('.slider-dot').forEach((d, i) => d.classList.toggle('active', i === current));
-      prevBtn.disabled = current === 0;
-      nextBtn.disabled = current >= maxIdx();
+    }
+
+    function jumpTo(n) {
+      current = ((n % total) + total) % total;
+      setTranslate(current, true);
+      updateDots();
+    }
+
+    function next() {
+      const nextIdx = current + 1;
+      setTranslate(nextIdx, true);
+      // after animation: if we're now in clones, silently reset to original
+      track.addEventListener('transitionend', function onEnd() {
+        track.removeEventListener('transitionend', onEnd);
+        if (nextIdx >= total) {
+          current = nextIdx % total;
+          setTranslate(current, false);
+        } else {
+          current = nextIdx;
+        }
+        updateDots();
+      });
+    }
+
+    function prev() {
+      if (current === 0) {
+        // jump to clone at end without animation, then slide back
+        setTranslate(total, false);
+        requestAnimationFrame(() => requestAnimationFrame(() => {
+          current = total - 1;
+          setTranslate(current, true);
+          updateDots();
+        }));
+      } else {
+        current -= 1;
+        setTranslate(current, true);
+        updateDots();
+      }
     }
 
     function init() {
       const w = itemW();
-      items.forEach(el => { el.style.width = w + 'px'; });
-      if (current > maxIdx()) current = maxIdx();
+      allItems.forEach(el => { el.style.width = w + 'px'; });
       buildDots();
-      goTo(current);
+      setTranslate(current, false);
+      updateDots();
     }
 
-    prevBtn.addEventListener('click', () => goTo(current - 1));
-    nextBtn.addEventListener('click', () => goTo(current + 1));
+    prevBtn.addEventListener('click', () => { resetAuto(); prev(); });
+    nextBtn.addEventListener('click', () => { resetAuto(); next(); });
 
     let touchX = 0;
-    wrap.addEventListener('touchstart', e => { touchX = e.touches[0].clientX; }, { passive: true });
+    wrap.addEventListener('touchstart', e => { touchX = e.touches[0].clientX; pauseAuto(); }, { passive: true });
     wrap.addEventListener('touchend', e => {
       const dx = touchX - e.changedTouches[0].clientX;
-      if (Math.abs(dx) > 50) goTo(current + (dx > 0 ? 1 : -1));
+      if (Math.abs(dx) > 50) dx > 0 ? next() : prev();
+      resetAuto();
     });
+
+    wrap.addEventListener('mouseenter', pauseAuto);
+    wrap.addEventListener('mouseleave', resetAuto);
+
+    let autoTimer;
+    function pauseAuto() { clearInterval(autoTimer); }
+    function resetAuto() {
+      clearInterval(autoTimer);
+      autoTimer = setInterval(next, 3000);
+    }
 
     window.addEventListener('resize', init);
     requestAnimationFrame(function tryInit() {
       if (wrap.offsetWidth === 0) { requestAnimationFrame(tryInit); return; }
       init();
+      resetAuto();
     });
   }());
 
