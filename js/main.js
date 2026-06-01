@@ -467,7 +467,10 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     window.addEventListener('resize', init);
-    init();
+    requestAnimationFrame(function tryInit() {
+      if (wrap.offsetWidth === 0) { requestAnimationFrame(tryInit); return; }
+      init();
+    });
   }());
 
 });
