@@ -458,20 +458,32 @@ document.addEventListener('DOMContentLoaded', () => {
       goTo(current);
     }
 
-    prevBtn.addEventListener('click', () => goTo(current - 1));
-    nextBtn.addEventListener('click', () => goTo(current + 1));
+    prevBtn.addEventListener('click', () => { resetAuto(); goTo(current - 1); });
+    nextBtn.addEventListener('click', () => { resetAuto(); goTo(current + 1); });
 
     let touchX = 0;
-    wrap.addEventListener('touchstart', e => { touchX = e.touches[0].clientX; }, { passive: true });
+    wrap.addEventListener('touchstart', e => { touchX = e.touches[0].clientX; pauseAuto(); }, { passive: true });
     wrap.addEventListener('touchend', e => {
       const dx = touchX - e.changedTouches[0].clientX;
       if (Math.abs(dx) > 50) goTo(current + (dx > 0 ? 1 : -1));
+      resetAuto();
     });
+
+    wrap.addEventListener('mouseenter', pauseAuto);
+    wrap.addEventListener('mouseleave', resetAuto);
+
+    let autoTimer;
+    function pauseAuto() { clearInterval(autoTimer); }
+    function resetAuto() {
+      clearInterval(autoTimer);
+      autoTimer = setInterval(() => goTo(current >= maxIdx() ? 0 : current + 1), 3000);
+    }
 
     window.addEventListener('resize', init);
     requestAnimationFrame(function tryInit() {
       if (wrap.offsetWidth === 0) { requestAnimationFrame(tryInit); return; }
       init();
+      resetAuto();
     });
   }());
 
