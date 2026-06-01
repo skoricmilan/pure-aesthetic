@@ -72,7 +72,7 @@ const translations = {
 
     test_tag: 'Utisci',
     test_title: 'Šta kažu naše <em>klijentkinje</em>',
-    t1_text: 'Prezadovoljna sam radom i pristupom dr Dragane. Strpljiva, njezna i jako prijatna. Nije mi bilo tesko da predjem malo vise km da dodjem do nje, jer je krajnji rezultat odlican: prirodne i lijepe usne.',
+    t1_text: 'Prezadovoljna sam radom i pristupom dr Dragane. Strpljiva, nežna i jako prijatna. Nije mi bilo tesko da predjem malo vise km da dodjem do nje, jer je krajnji rezultat odlican: prirodne i lijepe usne.',
     t2_text: 'Dugogodišnji sam klijent dr Dragane i mogu iskreno da kažem da sam prezadovoljna uslugom i rezultatima. Profesionalnost, ljubaznost i posvećenost pacijentu. Ordinacija je moderna, prijatna i sve se radi veoma pažljivo i bez stresa. Svaka preporuka za Pure Aesthetic i dr Draganu Ilić.',
     t3_text: 'Ja sam neko ko se mnogo plasi igala i uvijek sam izbjegavala sve sto ukljucuje injekcije, dok nisam dosla kod dr Dragane. Vec na konsultacijama mi je ulila povjerenje, sve mi je objasnila, na svako moje pitanje odgovorila. Radila sam botoks tri regije i mnogo sam se plasila. Medjutim, dr Dragana ima tako laganu ruku, da nisam ni osjetila bockanje. A rezultati su bili odlicni. Svi su primjetili da sam se podmladila, da izgledam svjezije ali niko nije ni pomislio da sam radila botoks, jer je dr Dragana to tako dobro uradila da sve izgleda prirodno, bez onog ukocenog izraza lica (zbog kojeg sam strahovala). Prezadovoljna sam i toplo preporucujem dr Draganu Ilic.',
     google_review_cta: 'Ostavi svoju recenziju o našim uslugama na <strong>Google</strong>',
