@@ -68,6 +68,7 @@ const translations = {
     r3_label: 'Fileri - Full face',
     r4_label: 'Brotox',
     r5_label: 'Fileri - Full face',
+    r6_label: 'Hijaluronski Fileri - Usne',
     results_ig_cta: 'Više rezultata i radova pogledajte na našem <strong>Instagram</strong> profilu',
 
     test_tag: 'Utisci',
@@ -184,6 +185,7 @@ const translations = {
     r3_label: 'Fillers - Full face',
     r4_label: 'Brotox',
     r5_label: 'Fillers - Full face',
+    r6_label: 'Hyaluronic Fillers - Lips',
     results_ig_cta: 'See more results and work on our <strong>Instagram</strong> profile',
 
     test_tag: 'Testimonials',
