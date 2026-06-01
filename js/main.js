@@ -404,4 +404,70 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  // ── Results slider ──
+  (function () {
+    const wrap = document.querySelector('.results-track-wrap');
+    if (!wrap) return;
+    const track = wrap.querySelector('.results-track');
+    const items = Array.from(track.querySelectorAll('.result-item'));
+    const prevBtn = document.querySelector('.slider-prev');
+    const nextBtn = document.querySelector('.slider-next');
+    const dotsWrap = document.querySelector('.slider-dots');
+
+    let current = 0;
+    const GAP = 32;
+
+    function perView() {
+      return window.innerWidth >= 1024 ? 3 : window.innerWidth >= 640 ? 2 : 1;
+    }
+
+    function maxIdx() { return Math.max(0, items.length - perView()); }
+
+    function itemW() {
+      const pv = perView();
+      return (wrap.offsetWidth - GAP * (pv - 1)) / pv;
+    }
+
+    function buildDots() {
+      dotsWrap.innerHTML = '';
+      for (let i = 0; i <= maxIdx(); i++) {
+        const btn = document.createElement('button');
+        btn.className = 'slider-dot' + (i === current ? ' active' : '');
+        btn.setAttribute('aria-label', 'Slajd ' + (i + 1));
+        btn.addEventListener('click', () => goTo(i));
+        dotsWrap.appendChild(btn);
+      }
+    }
+
+    function goTo(n) {
+      current = Math.max(0, Math.min(n, maxIdx()));
+      const w = itemW();
+      track.style.transform = 'translateX(-' + (current * (w + GAP)) + 'px)';
+      dotsWrap.querySelectorAll('.slider-dot').forEach((d, i) => d.classList.toggle('active', i === current));
+      prevBtn.disabled = current === 0;
+      nextBtn.disabled = current >= maxIdx();
+    }
+
+    function init() {
+      const w = itemW();
+      items.forEach(el => { el.style.width = w + 'px'; });
+      if (current > maxIdx()) current = maxIdx();
+      buildDots();
+      goTo(current);
+    }
+
+    prevBtn.addEventListener('click', () => goTo(current - 1));
+    nextBtn.addEventListener('click', () => goTo(current + 1));
+
+    let touchX = 0;
+    wrap.addEventListener('touchstart', e => { touchX = e.touches[0].clientX; }, { passive: true });
+    wrap.addEventListener('touchend', e => {
+      const dx = touchX - e.changedTouches[0].clientX;
+      if (Math.abs(dx) > 50) goTo(current + (dx > 0 ? 1 : -1));
+    });
+
+    window.addEventListener('resize', init);
+    init();
+  }());
+
 });
