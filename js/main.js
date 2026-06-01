@@ -416,9 +416,15 @@ document.addEventListener('DOMContentLoaded', () => {
     const nextBtn = document.querySelector('.slider-next');
     const dotsWrap = document.querySelector('.slider-dots');
 
+    for (let i = items.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [items[i], items[j]] = [items[j], items[i]];
+    }
+    items.forEach(el => track.appendChild(el));
+
     const GAP = 32;
     const total = items.length;
-    let current = 0; // logical index into original items (0..total-1)
+    let current = 0;
 
     // Clone items for infinite loop: [...originals, ...clones]
     items.forEach(el => track.appendChild(el.cloneNode(true)));
