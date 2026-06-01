@@ -19,7 +19,10 @@
   <meta property="og:image" content="images/hero/og-image.jpg">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -624,59 +627,116 @@
       </p>
     </div>
 
-    <div class="results-grid">
-      <div class="result-item fade-up">
-        <div class="result-imgs">
-          <div class="result-img-wrap">
-            <img src="images/before-after/usne-before.jpg" alt="Usne prije tretmana"
-              onerror="this.parentElement.classList.add('no-image')">
-            <div class="result-img-fallback"><span data-i18n="badge_before">Prije</span></div>
-            <span class="result-badge before" data-i18n="badge_before">Prije</span>
-          </div>
-          <div class="result-img-wrap">
-            <img src="images/before-after/usne-after.jpg" alt="Usne poslije tretmana"
-              onerror="this.parentElement.classList.add('no-image')">
-            <div class="result-img-fallback"><span data-i18n="badge_after">Poslije</span></div>
-            <span class="result-badge after" data-i18n="badge_after">Poslije</span>
-          </div>
-        </div>
-        <div class="result-label" data-i18n="r1_label">Hijaluronski Fileri - Usne</div>
-      </div>
+    <div class="results-slider">
+      <div class="results-track-wrap">
+        <div class="results-track">
 
-      <div class="result-item fade-up">
-        <div class="result-imgs">
-          <div class="result-img-wrap">
-            <img src="images/before-after/lice-before.jpg" alt="Lice prije tretmana"
-              onerror="this.parentElement.classList.add('no-image')">
-            <div class="result-img-fallback"><span data-i18n="badge_before">Prije</span></div>
-            <span class="result-badge before" data-i18n="badge_before">Prije</span>
+          <div class="result-item">
+            <div class="result-imgs">
+              <div class="result-img-wrap">
+                <picture>
+                  <source srcset="images/before-after/lips-pre.webp" type="image/webp">
+                  <img src="images/before-after/lips-pre.jpg" alt="Hijaluronski fileri usne - prije">
+                </picture>
+                <span class="result-badge before" data-i18n="badge_before">Prije</span>
+              </div>
+              <div class="result-img-wrap">
+                <picture>
+                  <source srcset="images/before-after/lips-posle.webp" type="image/webp">
+                  <img src="images/before-after/lips-posle.jpg" alt="Hijaluronski fileri usne - poslije">
+                </picture>
+                <span class="result-badge after" data-i18n="badge_after">Poslije</span>
+              </div>
+            </div>
+            <div class="result-label" data-i18n="r1_label">Hijaluronski Fileri - Usne</div>
           </div>
-          <div class="result-img-wrap">
-            <img src="images/before-after/lice-after.jpg" alt="Lice poslije tretmana"
-              onerror="this.parentElement.classList.add('no-image')">
-            <div class="result-img-fallback"><span data-i18n="badge_after">Poslije</span></div>
-            <span class="result-badge after" data-i18n="badge_after">Poslije</span>
-          </div>
-        </div>
-        <div class="result-label" data-i18n="r2_label">Fileri - Full face</div>
-      </div>
 
-      <div class="result-item fade-up">
-        <div class="result-imgs">
-          <div class="result-img-wrap">
-            <img src="images/before-after/koza-before.jpg" alt="Koža prije tretmana"
-              onerror="this.parentElement.classList.add('no-image')">
-            <div class="result-img-fallback"><span data-i18n="badge_before">Prije</span></div>
-            <span class="result-badge before" data-i18n="badge_before">Prije</span>
+          <div class="result-item">
+            <div class="result-imgs">
+              <div class="result-img-wrap">
+                <picture>
+                  <source srcset="images/before-after/botox-celo-pre.webp" type="image/webp">
+                  <img src="images/before-after/botox-celo-pre.jpg" alt="Botoks čelo - prije">
+                </picture>
+                <span class="result-badge before" data-i18n="badge_before">Prije</span>
+              </div>
+              <div class="result-img-wrap">
+                <picture>
+                  <source srcset="images/before-after/botox-celo-posle.webp" type="image/webp">
+                  <img src="images/before-after/botox-celo-posle.jpg" alt="Botoks čelo - poslije">
+                </picture>
+                <span class="result-badge after" data-i18n="badge_after">Poslije</span>
+              </div>
+            </div>
+            <div class="result-label" data-i18n="r2_label">Botoks - Čelo</div>
           </div>
-          <div class="result-img-wrap">
-            <img src="images/before-after/koza-after.jpg" alt="Koža poslije tretmana"
-              onerror="this.parentElement.classList.add('no-image')">
-            <div class="result-img-fallback"><span data-i18n="badge_after">Poslije</span></div>
-            <span class="result-badge after" data-i18n="badge_after">Poslije</span>
+
+          <div class="result-item">
+            <div class="result-imgs">
+              <div class="result-img-wrap">
+                <picture>
+                  <source srcset="images/before-after/fileri-ff-pre.webp" type="image/webp">
+                  <img src="images/before-after/fileri-ff-pre.jpg" alt="Fileri full face - prije">
+                </picture>
+                <span class="result-badge before" data-i18n="badge_before">Prije</span>
+              </div>
+              <div class="result-img-wrap">
+                <picture>
+                  <source srcset="images/before-after/fileri-ff-posle.webp" type="image/webp">
+                  <img src="images/before-after/fileri-ff-posle.jpg" alt="Fileri full face - poslije">
+                </picture>
+                <span class="result-badge after" data-i18n="badge_after">Poslije</span>
+              </div>
+            </div>
+            <div class="result-label" data-i18n="r3_label">Fileri - Full face</div>
           </div>
+
+          <div class="result-item">
+            <div class="result-imgs">
+              <div class="result-img-wrap">
+                <picture>
+                  <source srcset="images/before-after/brotox-pre.webp" type="image/webp">
+                  <img src="images/before-after/brotox-pre.jpg" alt="Brotox - prije">
+                </picture>
+                <span class="result-badge before" data-i18n="badge_before">Prije</span>
+              </div>
+              <div class="result-img-wrap">
+                <picture>
+                  <source srcset="images/before-after/brotox-posle.webp" type="image/webp">
+                  <img src="images/before-after/brotox-posle.jpg" alt="Brotox - poslije">
+                </picture>
+                <span class="result-badge after" data-i18n="badge_after">Poslije</span>
+              </div>
+            </div>
+            <div class="result-label" data-i18n="r4_label">Brotox</div>
+          </div>
+
+          <div class="result-item">
+            <div class="result-imgs">
+              <div class="result-img-wrap">
+                <picture>
+                  <source srcset="images/before-after/ff2-pre.webp" type="image/webp">
+                  <img src="images/before-after/ff2-pre.jpg" alt="Fileri full face - prije">
+                </picture>
+                <span class="result-badge before" data-i18n="badge_before">Prije</span>
+              </div>
+              <div class="result-img-wrap">
+                <picture>
+                  <source srcset="images/before-after/ff2-posle.webp" type="image/webp">
+                  <img src="images/before-after/ff2-posle.jpg" alt="Fileri full face - poslije">
+                </picture>
+                <span class="result-badge after" data-i18n="badge_after">Poslije</span>
+              </div>
+            </div>
+            <div class="result-label" data-i18n="r5_label">Fileri - Full face</div>
+          </div>
+
         </div>
-        <div class="result-label" data-i18n="r3_label">Biorevitalizacija - Glass Skin</div>
+      </div>
+      <div class="slider-nav fade-up">
+        <button class="slider-btn slider-prev" aria-label="Prethodni">&#8592;</button>
+        <div class="slider-dots"></div>
+        <button class="slider-btn slider-next" aria-label="Sljedeći">&#8594;</button>
       </div>
     </div>
 
