@@ -83,7 +83,7 @@ const translations = {
     contact_intro: 'Napišite nam i odgovorićemo u najkraćem roku. Prva konsultacija je besplatna.',
     addr_label: 'Adresa',
     hours_label: 'Radno Vrijeme',
-    hours_val: 'Pon – Pet: 09:00 – 18:00<br>Subota: po dogovoru',
+    hours_val: 'Pon - Pet: 09:00 - 18:00<br>Subota: po dogovoru',
     phone_label: 'Telefon',
 
     form_name: 'Ime',
@@ -200,7 +200,7 @@ const translations = {
     contact_intro: "Write to us and we'll respond as soon as possible. First consultation is free.",
     addr_label: 'Address',
     hours_label: 'Working Hours',
-    hours_val: 'Mon – Fri: 09:00 – 18:00<br>Saturday: by arrangement',
+    hours_val: 'Mon - Fri: 09:00 - 18:00<br>Saturday: by arrangement',
     phone_label: 'Phone',
 
     form_name: 'Name',
