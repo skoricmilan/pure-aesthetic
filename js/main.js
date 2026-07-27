@@ -70,7 +70,7 @@ const translations = {
     r5_label: 'Fileri - Full face',
     r6_label: 'Hijaluronski Fileri - Usne',
     r7_label: 'Botoks - Čeona regija',
-    r8_label: 'Botoks - Mrštilje',
+    r8_label: 'Botoks - Mrštilice',
     r9_label: 'Botoks - Okoloočna regija',
     results_ig_cta: 'Više rezultata i radova pogledajte na našem <strong>Instagram</strong> profilu',
 
