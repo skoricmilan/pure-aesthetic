@@ -69,6 +69,9 @@ const translations = {
     r4_label: 'Brotox',
     r5_label: 'Fileri - Full face',
     r6_label: 'Hijaluronski Fileri - Usne',
+    r7_label: 'Botoks - Čeona regija',
+    r8_label: 'Botoks - Mrštilje',
+    r9_label: 'Botoks - Okoloočna regija',
     results_ig_cta: 'Više rezultata i radova pogledajte na našem <strong>Instagram</strong> profilu',
 
     test_tag: 'Utisci',
@@ -186,6 +189,9 @@ const translations = {
     r4_label: 'Brotox',
     r5_label: 'Fillers - Full face',
     r6_label: 'Hyaluronic Fillers - Lips',
+    r7_label: 'Botox - Forehead region',
+    r8_label: 'Botox - Frown lines',
+    r9_label: 'Botox - Periorbital region',
     results_ig_cta: 'See more results and work on our <strong>Instagram</strong> profile',
 
     test_tag: 'Testimonials',
