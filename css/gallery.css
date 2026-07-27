@@ -207,3 +207,14 @@
   background: var(--burgundy);
   transform: scale(1.35);
 }
+
+.results-video {
+  max-width: 480px;
+  margin: 2.5rem auto 0;
+}
+
+.results-video video {
+  width: 100%;
+  display: block;
+  border-radius: 12px;
+}
